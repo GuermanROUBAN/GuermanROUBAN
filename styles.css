@@ -1,1 +1,49 @@
-h1{color:red;}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+.navi 
+{
+    display: flex;
+}
+    
+nav ul /*sans les puces*/
+{
+    display: flex;
+    list-style-type: none;
+    align-content: space-between;
+}
+
+nav a:hover /*survol au dessus*/
+{
+    color:red
+}
+.class
+{
+    background-color: F2F2F2;
+}
+.introduction
+{
+    display: flex;
+}
+
+/* section hebergements*/
+
+.hebergements
+{
+    display: flex;
+}
+
+/* section les plus populaires*/
+
+.populaires
+{
+    display: flex;
+}
