@@ -1,9 +1,30 @@
-body {
-    font-family: 'Open Sans', sans-serif;
+/* General */
+*
+{
+    /* on retire le margin et le padding qu'il y a naturellement dans le body */
+    margin:0;
+    padding: 0; 
+    box-sizing: border-box; /* pour que ca soit plus facile de positionner les elements */
+}
+
+html
+{
+    font: normal 16px raleway; 
 }
 
 /* Header */
 
+ul,  nav
+
+{
+    list-style-type: none; /*on enleve les puces*/
+}
+
+a
+{
+    text-decoration: none;
+    cursor: pointer; /*curseur se transforme en petit doight quand on passe sur le champs*/
+}
 header
 {
     display: flex;
@@ -32,6 +53,7 @@ nav a:hover /*survol au dessus*/
 .introduction
 {
     display: flex;
+    color: #0065FC;
 }
 
 /* section hebergements*/
@@ -51,6 +73,12 @@ nav a:hover /*survol au dessus*/
 /* section activités*/
 
 .activités
+{
+    display: flex;
+}
+/* section activités*/
+
+footer
 {
     display: flex;
 }
