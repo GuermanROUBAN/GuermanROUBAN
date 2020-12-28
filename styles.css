@@ -1,11 +1,3 @@
-/* General */
-*
-{
-    /* on retire le margin et le padding qu'il y a naturellement dans le body */
-    margin:0;
-    padding: 0; 
-    box-sizing: border-box; /* pour que ca soit plus facile de positionner les elements */
-}
 
 html
 {
@@ -24,61 +16,185 @@ a
 {
     text-decoration: none;
     cursor: pointer; /*curseur se transforme en petit doight quand on passe sur le champs*/
+    opacity: 0.9;
 }
+
+a:hover
+{
+    opacity: 1; /*petit effet au survol*/
+}
+
 header
 {
+    /*position:absolute; /*relative à son element parent*/
+    /*top: 0;
+    left:0; /*pour pas qu'il bouge*/
+    /*z-index: 10;permet de faire des couches, si index 10 alors index 9 sera en dessous*/
+    width: 100%; /*largeur*/
     display: flex;
     justify-content: space-between;
+    align-items: center; /*cela les centre dans leurs Div*/
+    color: #0065FC;
 }
-.navi 
+
+header nav 
 {
-    display: flex;
+    display: flex; /*aligne les div dans le menu navigation*/
 }
     
-nav ul /*sans les puces*/
+nav li 
 {
-    display: flex;
-    list-style-type: none;
-    align-content: space-between;
+    list-style-type: none; /*sans les puces*/
+    margin: 0 15px; /*espace les elements du menu navigation entreux eux*/
 }
 
 nav a:hover /*survol au dessus*/
 {
     color:red
 }
-.class
-{
-    background-color: F2F2F2;
-}
-.introduction
-{
-    display: flex;
-    color: #0065FC;
+
+@media (max-width: 992px){/*version tablette*/
+    header
+    {
+        padding: 20px 100px; /*ajout de l'espace entre le logo et le menu nav par rapport à la marge */
+    }
 }
 
+@media (max-width: 768px){ /*version mobile*/
+    header
+    {
+        flex-direction: column; /*menu nav passe sous le logo*/
+    }
+}
+
+/* Page d'acceuil*/
+
+label
+{
+    display:block;
+    font: 1rem raleway;
+}
+input label 
+{
+    margin: .4rem 0;
+    color: salmon;
+}
+.filtres
+{
+    display: flex;
+}
+.titre
+{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;    
+}
+.eco
+{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 10px;
+}
+.fam
+{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 10px;    
+}
+.rom
+{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 10px;
+}
+.ani
+{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 10px;
+}
 /* section hebergements*/
 
-.hebergements
+.container
 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
+
 }
 
+#section2
+{
+    justify-content: space-between;
+    background-color:#F2F2F2;
+    border-radius: 16px;
+}
+.Fenetres
+{   
+    display: inline-block;
+    flex-direction: row;
+    align-items: stretch; 
+    border-radius: 16px;
+    width: 880px;   
+}
+.etoiles
+{
+    color:#0065FC;
+}
+.element
+{
+    display: inline-block;
+    background-color: white;
+    background-size: 30%;
+    /*box-shadow: 0px 2px 0px grey;*/
+    border-radius: 16px;
+    padding: 5px;
+}
+.Information
+{
+    display:block;
+}
 /* section les plus populaires*/
-
+#section3
+{
+    
+    display: block;
+    background-color: #F2F2F2;
+    width: 413px;
+    padding: 20px;
+    border-radius: 16px;
+}
 .populaires
 {
-    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    border-radius: 16px;
+    width: auto;
+    padding: 5px;
 }
 
-/* section activités*/
-
-.activités
+.item
 {
     display: flex;
+    background-color:white;
+    border-radius: 16px;
+    padding: 5px;
+    margin: 20px;
 }
-/* section activités*/
-
-footer
+.container3
+{
+    display: inline-flex;
+    background-color:white;
+    width: 100%;
+}
+.description
 {
     display: flex;
+    flex-direction: column;
 }
+/* section activités*/
