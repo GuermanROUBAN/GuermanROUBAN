@@ -177,20 +177,14 @@ input label
     width: auto;
     padding: 5px;
 }
-
-.item
-{
-    display: flex;
-    background-color:white;
-    border-radius: 16px;
-    padding: 5px;
-    margin: 20px;
-}
 .container3
 {
     display: inline-flex;
     background-color:white;
     width: 100%;
+    padding:5px;
+    border-radius:16px;
+    justify-content: space-around;
 }
 .description
 {
