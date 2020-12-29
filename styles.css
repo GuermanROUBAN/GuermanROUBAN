@@ -95,6 +95,8 @@ input label
     flex-direction: row-reverse;
     align-items: center;
     margin: 10px;
+    border: 3px #DEEBFF solid;
+    border-radius: 45px;
 }
 .fam
 {
