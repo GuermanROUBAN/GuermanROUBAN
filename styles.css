@@ -1,13 +1,19 @@
+/* Body */
+h3
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
 html
 {
-    font: normal 16px raleway; 
+    font: normal 1em raleway;
+    max-width: 100%;
 }
 
 /* Header */
 
 ul,  nav
-
 {
     list-style-type: none; /*on enleve les puces*/
 }
@@ -67,67 +73,122 @@ nav a:hover /*survol au dessus*/
     }
 }
 
-/* Page d'acceuil*/
+/* section1*/
 
-label
+#section1
 {
-    display:block;
-    font: 1rem raleway;
+    background-color: chocolate;
 }
-input label 
+
+/* bloc recherche */
+
+.search
 {
-    margin: .4rem 0;
-    color: salmon;
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
 }
+
+.iconeposition
+{
+    display:flex;
+    align-items: justify;
+    padding: 0.2em;
+    background-color: #F2F2F2;
+    border:solid #F2F2F2;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+form /*formulaire*/
+{
+    height: 200px;
+    background-color: crimson;
+}
+
+.boutton
+{
+    border:solid #0065FC;
+    background-color:#0065FC;
+    color: white;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    width: 8em;
+    height: 2em;
+    margin:-5px;
+}
+
 .filtres
 {
     display: flex;
 }
+
+.rubrique
+{
+    border: 3px #DEEBFF solid;
+    border-radius: 45px;
+}
+
+.iconefilter
+{
+    text-align: center;
+    font-size: 0.8em;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    width: 1.1em;
+    height: 1.1em;
+    border-radius: 20px;
+    padding: 7px;
+}
+
+
+
 .titre
 {
     display:flex;
     flex-direction: row-reverse;
     align-items: center;    
 }
-.eco
-{
-    display:flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin: 10px;
-    border: 3px #DEEBFF solid;
-    border-radius: 45px;
-}
-.fam
-{
-    display:flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin: 10px;    
-}
-.rom
+.theme
 {
     display:flex;
     flex-direction: row-reverse;
     align-items: center;
     margin: 10px;
 }
-.ani
+/*Plus de 500 logements*/
+
+.info
 {
-    display:flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin: 10px;
+    display: flex;
+    align-items: center; 
 }
+.texteinfo
+{
+    padding:0 0 0 10px;
+}
+.iconeinfo
+{
+    text-align: center;
+    font-size: 1em;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    width: 1.1em;
+    height: 1.1em;
+    border-radius: 20px;
+    padding: 10px;
+}
+
 /* section hebergements*/
 
 .container
 {
-    width: 100%;
+    display: flex;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-
+    background-color: green;
 }
 
 #section2
@@ -138,24 +199,37 @@ input label
 }
 .Fenetres
 {   
-    display: inline-block;
-    flex-direction: row;
-    align-items: stretch; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     border-radius: 16px;
-    width: 880px;   
+    max-width: 880px;
+    max-height: 625px;   
 }
-.etoiles
+
+.photo
+{
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.etoiles /*etoiles pleines*/
 {
     color:#0065FC;
 }
+.uncheck /*etoiles vides*/
+{
+    color:#F2F2F2;
+}
+
 .element
 {
     display: inline-block;
     background-color: white;
-    background-size: 30%;
-    /*box-shadow: 0px 2px 0px grey;*/
+    max-width: 250px;
+    max-height: 200px;
     border-radius: 16px;
     padding: 5px;
+    /*box-shadow: 0px 2px 0px grey;*/
 }
 .Information
 {
@@ -177,6 +251,11 @@ input label
     border-radius: 16px;
     width: auto;
     padding: 5px;
+}
+.photopop
+{
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
 }
 .container3
 {
