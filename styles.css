@@ -136,13 +136,11 @@ form /*formulaire*/
     font-size: 0.8em;
     color: #0065FC;
     background-color: #DEEBFF;
-    width: 1.1em;
-    height: 1.1em;
+    width: 1.2em;
+    height: 1.2em;
     border-radius: 20px;
     padding: 7px;
 }
-
-
 
 .titre
 {
@@ -171,18 +169,18 @@ form /*formulaire*/
 .iconeinfo
 {
     text-align: center;
-    font-size: 1em;
+    font-size: 0.8em;
     color: #0065FC;
     background-color: #DEEBFF;
-    width: 1.1em;
-    height: 1.1em;
+    width: 1.2em;
+    height: 1.2em;
     border-radius: 20px;
     padding: 10px;
 }
 
-/* section hebergements*/
+/*milieu de page*/
 
-.container
+.maincontainer
 {
     display: flex;
     max-width: 100%;
@@ -191,13 +189,18 @@ form /*formulaire*/
     background-color: green;
 }
 
+/* section hebergements*/
+
 #section2
 {
     justify-content: space-between;
     background-color:#F2F2F2;
     border-radius: 16px;
 }
-.Fenetres
+
+/*pannel des offres*/
+
+.fenetres
 {   
     display: flex;
     flex-wrap: wrap;
@@ -231,11 +234,12 @@ form /*formulaire*/
     padding: 5px;
     /*box-shadow: 0px 2px 0px grey;*/
 }
-.Information
+.information
 {
     display:block;
 }
 /* section les plus populaires*/
+
 #section3
 { 
     display: block;
@@ -244,6 +248,9 @@ form /*formulaire*/
     padding: 20px;
     border-radius: 16px;
 }
+
+/*pannel des offres*/
+
 .populaires
 {
     flex-direction:row;
@@ -257,7 +264,7 @@ form /*formulaire*/
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
 }
-.container3
+.secondcontainer
 {
     display: inline-flex;
     background-color:white;
