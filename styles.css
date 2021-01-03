@@ -14,9 +14,10 @@ html
 
 /* Header */
 
-ul,  nav
+ul, nav
 {
     list-style-type: none; /*on enleve les puces*/
+    margin-top: 40px;
 }
 
 a
@@ -58,23 +59,52 @@ nav li
     list-style-type: none; /*sans les puces*/
     margin: 0 15px; /*espace les elements du menu navigation entreux eux*/
 }
-
 nav a:hover /*survol au dessus*/
 {
+    border: solid;
+    border-color: blue;
+    margin-top: 30px;
     color:red
 }
 
 @media (max-width: 992px){/*version tablette*/
     header
     {
-        padding: 20px 100px; /*ajout de l'espace entre le logo et le menu nav par rapport à la marge */
+        /*padding: 20px 100px; /*ajout de l'espace entre le logo et le menu nav par rapport à la marge */
     }
 }
 
-@media (max-width: 768px){ /*version mobile*/
+@media (max-width: 667px){ /*version mobile*/
     header
     {
-        flex-direction: column; /*menu nav passe sous le logo*/
+        /*flex-direction: column; /*menu nav passe sous le logo*/
+        display:flex;
+        flex-wrap: wrap;
+        width:667px; 
+    }
+    header nav
+    {
+        display: flex;
+        width:667px;
+        flex-wrap: wrap-reverse;
+        
+    }
+    nav li 
+    {
+    display:flex;
+    flex-wrap: wrap-reverse;
+    list-style-type: none; /*sans les puces*/
+    margin: 0 15px; /*espace les elements du menu navigation entreux eux*/
+    }
+    #section1
+    {
+    width: 667px;
+    margin:auto;
+    }
+    .filtres
+    {
+    display: flex;
+    flex-wrap: wrap;
     }
 }
 
@@ -408,19 +438,16 @@ footer
 }
 .p1
 {
-    
     width: 33%;
     padding-left: 40px;
 }
 .p2
 {
     width: 33%;
-   
-    
+
 }
 .p3
 {
     width: 33%;
-    
-    
+
 }
