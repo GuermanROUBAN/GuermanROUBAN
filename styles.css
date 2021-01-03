@@ -8,8 +8,8 @@ h3
 html
 {
     font: normal 1em raleway;
-    max-width: 100%;
     width: 1440px;
+    max-width: 100%;
 }
 
 /* Header */
@@ -37,11 +37,15 @@ header
     /*top: 0;
     left:0; /*pour pas qu'il bouge*/
     /*z-index: 10;permet de faire des couches, si index 10 alors index 9 sera en dessous*/
-    width: 100%; /*largeur*/
+    /*largeur*/
     display: flex;
+    width:1340px;
+    max-width: 100%;
+    margin:auto;
     justify-content: space-between;
     align-items: center; /*cela les centre dans leurs Div*/
     color: #0065FC;
+
 }
 
 header nav 
@@ -74,7 +78,14 @@ nav a:hover /*survol au dessus*/
     }
 }
 
-/* section1*/
+/*section1*/
+
+#section1
+{
+    width: 1340px;
+    max-width: 100%;
+    margin:auto;
+}
 
 /* bloc recherche */
 
@@ -121,34 +132,57 @@ form /*formulaire*/
 
 .rubrique
 {
-    border: 3px #DEEBFF solid;
+    display: flex;
+    flex:wrap;
+    justify-items: center;
+    border: 3px #F2F2F2 solid;
     border-radius: 45px;
+    height: 48px;
+    margin-bottom: -2px;
+    margin-top: -2px;
+    margin-left: -2px;
+
+
 }
 
 .iconefilter
 {
-    text-align: center;
-    font-size: 0.8em;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    width: 1.2em;
-    height: 1.2em;
-    border-radius: 20px;
-    padding: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.2em;
+        color: #0065FC;
+        background-color: #DEEBFF;
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 34px;
+        padding: 1px;
+        margin-right: 20px;
+        margin-bottom: -2px;
+        margin-top: -2px;
+        margin-left: -2px;
 }
 
 .titre
 {
     display:flex;
     flex-direction: row-reverse;
-    align-items: center;    
+    align-items: center;
+    margin-right: 25px;    
 }
 .theme
 {
     display:flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin: 10px;
+    margin: 25px;
+}
+
+.sujet
+{
+
+    margin-right: 20px;
 }
 /*Plus de 500 logements*/
 
@@ -163,14 +197,14 @@ form /*formulaire*/
 }
 .iconeinfo
 {
-    text-align: center;
-    font-size: 0.8em;
+    font-size: 1em;
     color: #0065FC;
-    background-color: #DEEBFF;
-    width: 1.2em;
-    height: 1.2em;
+    border: solid;
+    border-color: #F2F2F2;
+    width: 1.1em;
+    height: 1.1em;
     border-radius: 20px;
-    padding: 10px;
+    text-align: center;
 }
 
 /*milieu de page*/
@@ -178,9 +212,11 @@ form /*formulaire*/
 .maincontainer
 {
     display: flex;
-    justify-content: space-between;
+    width:1340px;
     max-width: 100%;
     height: 627px;
+    margin:auto;
+    justify-content: space-between;
 
 }
 
@@ -200,6 +236,7 @@ form /*formulaire*/
 {
     display:flex;
     height: 10%;
+    margin-left:30px;
 }
 
 /*body section 2 pannel des offres*/
@@ -242,6 +279,7 @@ form /*formulaire*/
 {
     display:flex;
     height: 10%;
+    margin-left: 30px;
 }
 /* section 3 les plus populaires*/
 
@@ -249,10 +287,10 @@ form /*formulaire*/
 { 
     display:flex;
     flex-wrap: wrap;
-    justify-items: space-between;
-    background-color:#F2F2F2;
     width: 413px;
     height: 627px;
+    justify-items: space-between;
+    background-color:#F2F2F2;
     border-radius: 16px;
 }
 
@@ -268,11 +306,14 @@ form /*formulaire*/
 {
     display:flex;
     height: 10%;
+    margin-left: 0px;
+    margin-right: 40px;
 
 }
 .icone3
 {
     display:flex;
+    justify-items:baseline;
     height: 10%;
 }
 
@@ -305,15 +346,19 @@ height: 90%;
 {
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
 }
 /* section4 activités*/
 
 #section4
 {
     
-    justify-content: space-around;
+    
     max-width: 100%;
+    width: 1340px;
     height: 627px;
+    margin:auto;
+    justify-content: space-around;
 
 }.titre4
 {
@@ -351,4 +396,29 @@ height: 90%;
 .longchamp
 {
     margin-top: 21px;
+}
+footer
+{
+    display:flex;
+    width: 1440px;
+    max-width: 100%;
+    justify-content: space-between;
+    background-color:#F2F2F2;
+    padding-top: 30px;
+}
+.p1
+{
+    
+    width: 25%;
+    padding-left: 40px;
+}
+.p2
+{
+    width: 25%;
+    padding-left: 100px;
+}
+.p3
+{
+    width: 50%;
+    padding-left: 100px;
 }
