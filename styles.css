@@ -1,10 +1,4 @@
 /* Body */
-h3
-{
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
 html
 {
     font: normal 1em raleway;
@@ -12,12 +6,20 @@ html
     max-width: 100%;
 }
 
+h3
+{
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+
 /* Header */
 
 ul, nav
 {
     list-style-type: none; /*on enleve les puces*/
     margin-top: 40px;
+    align-items: center; /*cela les centre dans leurs Div*/
 }
 
 a
@@ -44,21 +46,22 @@ header
     max-width: 100%;
     margin:auto;
     justify-content: space-between;
-    align-items: center; /*cela les centre dans leurs Div*/
+    justify-items: center; /*cela les centre dans leurs Div*/
     color: #0065FC;
-
 }
 
 header nav ul
 {
     display: flex; /*aligne les div dans le menu navigation*/
 }
-    
 nav li 
 {
     list-style-type: none; /*sans les puces*/
     margin: 0 15px; /*espace les elements du menu navigation entreux eux*/
+    margin-top: -10px;
 }
+
+
 nav a:hover /*survol au dessus*/
 {
     border: solid;
@@ -182,7 +185,7 @@ nav a:hover /*survol au dessus*/
     margin-left: -2px;
 }
 
-.rubrique:hover
+.rubrique:hover /*option survol des rubriques filtres*/
 {
     border: solid;
     border-color: #F2F2F2;
@@ -428,6 +431,7 @@ height: 90%;
     border-radius: 16px;
     margin-bottom: auto;
     box-shadow: 10px 5px 5px #F2F2F2;
+    padding-bottom: 20px;
 }
 
 .element4images
@@ -437,11 +441,13 @@ height: 90%;
 }
 .frioul
 {
-    margin-top:57px;
+    margin-top:36px;
+    padding-bottom: 20px;
 }
 .longchamp
 {
-    margin-top: 40px;
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 footer
 {
@@ -465,4 +471,8 @@ footer
 .p3
 {
     width: 33%;
+}
+.titres4 /*titres des images dans la section4 -> activités*/
+{
+    padding-left: 10px;
 }
