@@ -182,6 +182,13 @@ nav a:hover /*survol au dessus*/
     margin-left: -2px;
 }
 
+.rubrique:hover
+{
+    border: solid;
+    border-color: #F2F2F2;
+    margin-top: 30px;
+    color:red
+}
 .iconefilter
 {
         display: flex;
