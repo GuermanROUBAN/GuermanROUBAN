@@ -1,4 +1,5 @@
 /* Body */
+
 html
 {
     font: normal 1em raleway;
@@ -15,13 +16,45 @@ h3
 
 /* Header */
 
-ul, nav
+header
 {
-    list-style-type: none; /*on enleve les puces*/
-    margin-top: 40px;
+
+    display: flex;
+    width:1340px;
+    max-width: 100%;
+    margin:auto;
+    justify-content: space-between;
     align-items: center; /*cela les centre dans leurs Div*/
+    color: #0065FC;
 }
 
+.logo
+{
+    display:flex;
+}
+
+nav ul
+{   
+    display: flex; /*aligne les div dans le menu navigation*/
+    margin:0;
+    padding: 0;
+    list-style-type: none; /*on enleve les puces*/
+    align-items: center;
+}
+nav li 
+{
+    display: block;
+    list-style-type: none; /*sans les puces*/
+    margin: 0 15px; /*espace les elements du menu navigation entreux eux*/
+}
+
+nav a:hover /*survol au dessus*/
+{
+    border-top: solid;
+    border-color: #0065FC;
+    margin-top: 30px;
+    color:red
+}
 a
 {
     text-decoration: none;
@@ -34,82 +67,6 @@ a:hover
     opacity: 1; /*petit effet au survol*/
 }
 
-header
-{
-    /*position:absolute; /*relative à son element parent*/
-    /*top: 0;
-    left:0; /*pour pas qu'il bouge*/
-    /*z-index: 10;permet de faire des couches, si index 10 alors index 9 sera en dessous*/
-    /*largeur*/
-    display: flex;
-    width:1340px;
-    max-width: 100%;
-    margin:auto;
-    justify-content: space-between;
-    justify-items: center; /*cela les centre dans leurs Div*/
-    color: #0065FC;
-}
-
-header nav ul
-{
-    display: flex; /*aligne les div dans le menu navigation*/
-}
-nav li 
-{
-    list-style-type: none; /*sans les puces*/
-    margin: 0 15px; /*espace les elements du menu navigation entreux eux*/
-    margin-top: -10px;
-}
-
-
-nav a:hover /*survol au dessus*/
-{
-    border: solid;
-    border-color: blue;
-    margin-top: 30px;
-    color:red
-}
-
-@media (max-width: 992px){/*version tablette*/
-    header
-    {
-        /*padding: 20px 100px; /*ajout de l'espace entre le logo et le menu nav par rapport à la marge */
-    }
-}
-
-@media (max-width: 667px){ /*version mobile*/
-    header
-    {
-        /*flex-direction: column; /*menu nav passe sous le logo*/
-        display:flex;
-        flex-wrap: wrap;
-        width:667px; 
-    }
-    header nav
-    {
-        display: flex;
-        width:667px;
-        flex-wrap: wrap-reverse;
-        
-    }
-    nav li 
-    {
-    display:flex;
-    flex-wrap: wrap-reverse;
-    list-style-type: none; /*sans les puces*/
-    margin: 0 15px; /*espace les elements du menu navigation entreux eux*/
-    }
-    #section1
-    {
-    width: 667px;
-    margin:auto;
-    }
-    .filtres
-    {
-    display: flex;
-    flex-wrap: wrap;
-    }
-}
 
 /*section1*/
 

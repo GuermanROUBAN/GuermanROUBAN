@@ -1,0 +1,40 @@
+html
+{
+	margin:0;
+	padding:0;
+	width: 100%;
+	color:red;
+}
+
+header
+{
+	width:100%;
+	background-color: chartreuse;
+	
+}
+.imglogo
+{
+	overflow-block:hidden ;
+	margin:0;
+	padding-left:10px;
+}
+
+ul
+{
+	flex-wrap: wrap-reverse;
+}
+.inscri
+{
+	margin-top: 40px;
+	padding-left: 160px;
+}
+
+.heber
+{
+	margin-top: 20px;
+	margin-left: -25%;
+}
+.activ
+{
+	margin-top: 20px;
+	margin-left:25%;
