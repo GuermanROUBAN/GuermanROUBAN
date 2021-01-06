@@ -19,21 +19,24 @@
    padding-left:20px;
 }
 
-.block:hover /* trait bleu au dessous du menu navigation*/
+.block:hover /* trait bleu en dessous du menu navigation*/
 {
    border-bottom: solid; /*trait de soulignement au passage du curseur*/
-   border-color #0065FC;
+   border-color: #0065FC;
 }
-.search /* champs dans le quel se trouve la bare de recherche*/
+/*section1 - debut de page*/
+
+.search /* champs dans le quel se trouve la bare de recherche (formulaire)*/
+
 {
    display:flex;
-   background-color: red;
+   background-color:red;
    flex-direction: row;
    text-align: center;
    align-items: center;
 }
 
-.iconeposition
+.iconeposition /*icone avant le formulaire*/
 {
    display: flex;
    align-items: center;
@@ -47,7 +50,7 @@
    width: 50px;
 }
 
-#site-search/*formulaire*/
+#site-search /*formulaire*/
 {
    height: 50px;
    border-top:solid;
@@ -58,7 +61,7 @@
    font-weight: bold;
 }
 
-.boutton
+.boutton /*boutton de recherche du formulaire*/
 {
    border:solid #0065FC;
    background-color:#0065FC;
@@ -68,4 +71,25 @@
    width: 8em;
    height: 50px;
    margin:-5px;
+}
+
+/* incone de l'onglet filtre*/
+
+.iconefilter
+{
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-size: 1.2em;
+color: #0065FC;
+background-color: #DEEBFF;
+width: 2.5em;
+height: 2.5em;
+border-radius: 34px;
+padding: 1px;
+margin-right: 20px;
+margin-bottom: -2px;
+margin-top: -2px;
+margin-left: -2px;
 }

@@ -1,10 +1,10 @@
 
-h3
+
+h4
 {
-   margin-top: 2px;
+   margin-top: 0px;
    margin-bottom: 2px;
 }
-
 
 /* Header */
 
@@ -61,6 +61,7 @@ a
    padding-left:20px;
 }
 
+
 .block:hover
 {
    border-top: solid;
@@ -69,7 +70,8 @@ a
 
 .nav1
 {
-   background:green;
+
+    background:green;
 }
 
 .nav2
@@ -101,16 +103,16 @@ a
 
 .iconeposition
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #F2F2F2;
-    border:solid #F2F2F2;
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
-    height: 46px;
-    width: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+background-color: #F2F2F2;
+border:solid #F2F2F2;
+border-top-left-radius: 16px;
+border-bottom-left-radius: 16px;
+height: 46px;
+width: 50px;
 }
 
 #site-search/*formulaire*/
@@ -129,6 +131,7 @@ a
     border:solid #0065FC;
     background-color:#0065FC;
     color: white;
+    font-weight: 600;
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
     width: 8em;
@@ -197,7 +200,6 @@ a
 
 .sujet
 {
-
     margin-right: 20px;
     font-weight: bold;
     font-size: 1em;
@@ -273,29 +275,44 @@ a
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
-.avis /*etoiles pleines*/
-{
-    color:#0065FC;
-}
-.uncheck /*etoiles vides*/
-{
-    color:#F2F2F2;
-}
 
 .element2
 {
     display: inline-block;
-    background-color: white;
+    background-color:white;
     max-width: 250px;
     max-height: 200px;
     border-radius: 16px;
     padding: 5px;
-    /*box-shadow: 0px 2px 0px grey;*/
+    box-shadow: 10px 5px 5px #e9e5e5;
 }
-.information
+
+.element2 h4
+{
+    margin-top: 5px;
+    margin-bottom: 0px;
+    padding-left: 15px;
+    color:black;
+}
+
+.element2 p
+{
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding-left: 15px;
+    color:black;
+}
+
+.element2 i
+{
+    margin-top: -25px;
+}
+.information a
 {
     display:flex;
-    height: 10%;
+    align-items: center;
+    color:black;
+    font-weight: 700;
     margin-left: 30px;
 }
 /* section 3 les plus populaires*/
@@ -373,7 +390,6 @@ height: 90%;
    width: 1340px;
    height: 615px;
    margin:auto;
-   background-color: sienna;
 }
 
 #section4
@@ -392,7 +408,6 @@ height: 90%;
    display: flex;
    flex-wrap: wrap;
    width: 100%;
-   background-color: slateblue;
    height: 452px;
    justify-content: space-between;
 }
@@ -400,7 +415,7 @@ height: 90%;
 {
    display:flex;
    flex-direction:column;
-   max-height: 452px;
+   max-height: 448px;
    justify-content: space-between;
 }
 
@@ -408,7 +423,6 @@ height: 90%;
 {
    background-color: white;
    border-radius: 16px;
-   margin-bottom: auto;
    box-shadow: 10px 5px 5px #F2F2F2;
    padding-bottom: 20px;
 }
@@ -417,6 +431,12 @@ height: 90%;
 {
    border-top-right-radius: 16px;
    border-top-left-radius: 16px;
+}
+
+.section4body h4
+{
+    padding-left: 10px;
+    color:black;
 }
 
 footer
