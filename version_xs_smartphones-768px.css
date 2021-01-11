@@ -1,95 +1,514 @@
 
-
-.wrapper /*header*/
+.wrapper
 {
-	display:flex;
-	width:100%;
-	background-color: chartreuse;
-	align-items: center;
+display:flex;
+flex-wrap: wrap;
+width: 100%;
 }
+
+.logo
+{
+   display:flex;
+   align-items: center;
+   width: 80%;
+   order:1;
+
+}
+
+.navigation /* hébergements et navigation*/
+{
+   display:block;
+   font-size: 16px;
+   height: 2;
+   width: 100%;
+   order:3;
+   align-items: center;
+   justify-content: space-around;
+
+}
+
+.inscription /*s'inscrire*/
+{
+display:flex;
+align-items: center;
+justify-content: flex-end;
+width:20%;
+order:2;
+
+
+}
+
+
+nav ul
+{   
+display: flex; /*aligne les div dans le menu navigation*/
+
+margin:0px;
+padding: 0px;
+}
+nav li 
+{
+display: block;
+
+margin: 0 15px; /*espace les elements du menu navigation entreux eux*/
+padding-left: 20px;
+}
+
+a
+{
+display:inline-block;
+color: #0065FC;
+font-weight: 600;
+}
+
 
 .block /* menu de navigation */
 {
-   block-size: 100px;
-   display: flex;
-   align-items: center;
-   margin-right: 20px;
-   padding-right:20px;
-   margin-left: 20px;
-   padding-left:20px;
+display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
+block-size:20px;
+margin-top:20px ;
+padding-bottom: 20px;
+
 }
 
 .block:hover /* trait bleu en dessous du menu navigation*/
 {
-   border-bottom: solid; /*trait de soulignement au passage du curseur*/
-   border-color: #0065FC;
+border-bottom: solid; /*trait de soulignement au passage du curseur*/
+border-color: #0065FC;
 }
-/*section1 - debut de page*/
+
+
+
+/*--------section1 - debut de page-------------*/
+
+
+
+.wrapper1
+{
+display:block;
+width:100%;
+justify-content: space-around;
+align-items: center;
+}
+
 
 .search /* champs dans le quel se trouve la bare de recherche (formulaire)*/
 
 {
-   display:flex;
-   background-color:red;
-   flex-direction: row;
-   text-align: center;
-   align-items: center;
+display:flex;
+flex-direction: row;
+padding-left: 5px;
+align-items: center;
 }
 
 .iconeposition /*icone avant le formulaire*/
-{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   background-color: #F2F2F2;
-   border:solid #F2F2F2;
-   border-top-left-radius: 16px;
-   border-bottom-left-radius: 16px;
-   height: 46px;
-   width: 50px;
-}
-
-#site-search /*formulaire*/
-{
-   height: 50px;
-   border-top:solid;
-   border-bottom:solid;
-   border-right:none;
-   border-left: none;
-   border-color: #F2F2F2;
-   font-weight: bold;
-}
-
-.boutton /*boutton de recherche du formulaire*/
-{
-   border:solid #0065FC;
-   background-color:#0065FC;
-   color: white;
-   border-top-right-radius: 16px;
-   border-bottom-right-radius: 16px;
-   width: 8em;
-   height: 50px;
-   margin:-5px;
-}
-
-/* incone de l'onglet filtre*/
-
-.iconefilter
 {
 display: flex;
 align-items: center;
 justify-content: center;
 text-align: center;
-font-size: 1.2em;
-color: #0065FC;
-background-color: #DEEBFF;
-width: 2.5em;
-height: 2.5em;
-border-radius: 34px;
-padding: 1px;
-margin-right: 20px;
-margin-bottom: -2px;
-margin-top: -2px;
-margin-left: -2px;
+background-color: #F2F2F2;
+border:solid #F2F2F2;
+border-top-left-radius: 16px;
+border-bottom-left-radius: 16px;
+height: 48px;
+width: 52px;
+}
+
+#site-search /*formulaire*/
+{
+height: 52px;
+width:250px;
+border-top:solid;
+border-bottom:solid;
+border-right:none;
+border-left: none;
+border-color: #F2F2F2;
+font-weight: bold;
+}
+
+.boutton /*boutton de recherche du formulaire*/
+{
+border:solid #0065FC;
+background-color:#0065FC;
+border-top-right-radius: 16px;
+border-top-left-radius: 16px;
+border-bottom-right-radius: 16px;
+border-bottom-left-radius:16px;
+width: 50px;
+height: 52px;
+margin:-20px;
+}
+
+.boutton:before
+{
+   content:\01F50D;
+   color:white;
+}
+
+/* incone de l'onglet filtre*/
+
+
+.filtres
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;   /*influe sur la position de la ligne*/
+    margin-bottom: 26px;
+}
+
+.rubrique
+{
+    display: flex;
+    flex:wrap;
+    justify-items: center;
+    border: 3px #F2F2F2 solid;
+    border-radius: 45px;
+    height: 48px;
+    margin-bottom: -2px;
+    margin-top: -2px;
+    margin-left: -2px;
+}
+
+.rubrique:hover /*option survol des rubriques filtres*/
+{
+    border: solid;
+    border-color: #F2F2F2;
+    color:red
+}
+.iconefilter
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2em;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 34px;
+    padding: 1px;
+    margin-right: 13px;
+    margin-bottom: -2px;
+    margin-top: -2px;
+    margin-left: -2px;
+}
+
+.titre
+{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 25px;    
+}
+.theme
+{
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 40px;
+
+}
+
+.sujet
+{
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.info
+{
+    display: flex;
+    align-items: center; 
+}
+.texteinfo
+{
+    padding:0 0 0 15px;
+    margin-bottom: 20px;
+}
+.iconeinfo
+{
+    font-size: 0.6em; /*reglage de la taille du petit i*/
+    color: #0065FC;
+    border: solid;
+    border-color: #F2F2F2;
+    width: 1.1em;
+    height: 1.1em;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+
+
+        /*milieu de page*/
+
+      .wrapper23
+      {
+         display:flex;
+         flex-direction: column;
+         width: 100%;
+         background-color:red;
+      }
+
+
+
+        .maincontainer
+        {
+        display: flex;
+        flex-wrap:  wrap;
+        width:100%;
+        margin:auto;
+        justify-content: space-between;
+
+        }
+
+        /* section2 hebergements*/
+
+        #section2
+        {
+        display: flex;
+        flex-wrap: wrap;
+         order:2;
+        justify-content: space-between;
+        background-color:#F2F2F2;
+        border-radius: 16px;
+        background-color:orange;
+        }
+
+        /*titre*/
+
+        .titre2
+        {
+        display:flex;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 40 0 20 0px;
+        padding-left: 15px;
+        }
+
+        /*body section 2 pannel des offres*/
+
+        .section2body
+        {   
+        display: flex;
+        flex-wrap: wrap;
+         width: 100%;
+         justify-content: space-around;
+        border-radius: 16px;
+        }
+
+        .element2images
+        {
+        width: 325px;
+        height: 114px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        }
+
+        .element2
+        {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width:auto;
+        background-color:white;
+        border-radius: 16px;
+        padding: 5px;
+        box-shadow: 10px 5px 5px #e9e5e5;
+        margin-bottom: 15px;
+        }
+
+        .element2 h4
+        {
+        margin-top: 5px;
+        margin-bottom: 0px;
+        padding-left: 15px;
+        color:black;
+        }
+
+        .element2 p
+        {
+        margin-top: 5px;
+        margin-bottom: 0;
+        padding-left: 15px;
+        color:black;
+        font-weight: 400; /*epaisseur de la police du texte de description*/
+        }
+
+        .information a
+        {
+        display:flex;
+        align-items: center;
+        color:black;
+        font-weight: 600;
+        margin:15px;
+        margin-left: 30px;
+        }
+
+
+         /* section 3 les plus populaires*/
+
+         #section3
+         { 
+         display:flex;
+         flex-wrap: wrap;
+         order:1;
+         width: 100%;
+         justify-items: space-between;
+         background-color:#F2F2F2;
+         border-radius: 16px;
+         }
+
+         .section3head
+         {
+         display: flex;
+         justify-content: space-around;
+         width: 100%;
+         background-color: blueviolet;
+         }
+         
+         .titre3
+         {
+
+         display:flex;
+         justify-content: flex-start;
+         width: 100%;
+         margin: 40 0 20 0px;
+         padding-left: 15px;
+
+         }
+         .icone3
+         {
+         display:flex;
+         justify-items:baseline;
+         }
+
+         /*body pannel des offres*/
+
+         .section3body
+         {
+         display:flex;
+         flex-wrap: wrap;
+         width: 100%;
+         margin-bottom: 20px;
+         justify-content: space-around;
+         }
+
+         .element3
+         {
+         display: inline-flex;
+         background-color:white;
+         width:342px;
+         margin-bottom: 10px;
+         padding:5px 5px;
+         border-radius:16px;
+         background-color: pink;
+         }
+         .element3images
+         {
+         width: 127px;
+         border-top-left-radius: 16px;
+         border-bottom-left-radius: 16px;
+         }
+         
+         .element3description
+         {
+         margin-left: 10px;
+         }
+
+         .element3description h4
+         {
+         margin-top: 10px;
+         padding-bottom: 0px;
+         margin-bottom: 0px;
+         color:black;
+         }
+
+         .element3description p
+         {
+         color:black;
+         font-weight: 400;
+         }
+         .element3description i
+         {
+         margin-top: 10px;
+   }
+
+/*Fin de page*/
+
+
+            /* section4 activités*/
+
+            .wrapper4
+            {
+            display:flex;
+            flex-wrap: wrap;
+            min-width: 100%;
+            margin:auto;
+            }
+
+            #section4
+            {
+            width: 100%;
+            }
+
+            .titre4 h2/*titres des images dans la section4 -> activités*/
+            {
+            margin-top: 60px;
+            margin-bottom: 25px;
+            padding-left: 10px;    
+            }
+            .section4body
+            {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+            }
+            .contenaire4
+            {
+            display:flex;
+            flex-direction:column;
+            justify-content: space-between;
+            }
+
+            .element4
+            {
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 10px 5px 5px #F2F2F2;
+            padding-bottom: 20px;
+            }
+
+            .element4images
+            {
+            border-top-right-radius: 16px;
+            border-top-left-radius: 16px;
+            }
+
+            .section4body h4
+            {
+            padding-left: 10px;
+            color:black;
+            }
+
+
+
+            
+/*Footer*/
+
+footer
+{
+display:flex;
+flex-wrap: wrap;
+width: 100%;
+background-color:#F2F2F2;
 }

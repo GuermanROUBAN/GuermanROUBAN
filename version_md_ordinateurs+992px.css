@@ -13,7 +13,7 @@ header
 display: flex;
 margin: auto;
 justify-content: space-between;
-align-items: center; /*cela les centre dans leurs Div*/
+
 }
 
 .wrapper
@@ -21,22 +21,28 @@ align-items: center; /*cela les centre dans leurs Div*/
 display:flex;
 width: 1340px;
 margin:auto;
-justify-content: space-between;
-align-items: center; /*cela les centre dans leurs Div*/
 color: #0065FC;
 }
 
 .logo
 {
 display:flex;
+width: 70%;
+
 }
+
+.navigation
+{
+    display:flex;
+  
+}
+
 
 nav ul
 {   
 display: flex; /*aligne les div dans le menu navigation*/
 margin:0px;
 padding: 0px;
-align-items: center;
 }
 nav li 
 {
@@ -52,18 +58,14 @@ color: #0065FC;
 font-weight: 600;
 }
 
-
 .block
 {
 block-size: 100px;
-display: flex;
+display:flex;
 align-items: center;
-margin-right: 20px;
-padding-right:15px;
-margin-left: 20px;
-padding-left:15px;
+padding-left:30px;
+padding-right:30px;
 }
-
 
 .block:hover
 {
@@ -71,6 +73,13 @@ border-top: solid;
 border-color: #0065FC;
 }
 
+.inscription
+{
+display:flex;
+align-items: center;
+justify-content: center;
+min-width: 10%;
+}
 
 /*Début de page*/
 
@@ -157,7 +166,6 @@ border-color: #0065FC;
 {
     border: solid;
     border-color: #F2F2F2;
-    
     color:red
 }
 .iconefilter
@@ -336,7 +344,7 @@ border-color: #0065FC;
         .titre3
         {
         display:flex;
-        height: 10%;
+
         margin-left: 0px;
         margin-right: 40px;
 
@@ -345,7 +353,6 @@ border-color: #0065FC;
         {
         display:flex;
         justify-items:baseline;
-        height: 10%;
         }
 
         /*body pannel des offres*/
@@ -362,8 +369,6 @@ border-color: #0065FC;
         {
         display: inline-flex;
         background-color:white;
-        width:342px;
-        height:134px;
         padding:5px 5px;
         border-radius:16px;
 
