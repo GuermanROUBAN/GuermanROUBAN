@@ -6,13 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet 2 Reservia</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
     <link rel="stylesheet" media="screen and (min-width:375px) and (max-width:667px)"
-        href="/version_xs_smartphones-768px.css" />
+        href="version_xs_smartphones-768px.css" />
     <link rel="stylesheet" media="screen and (min-width:667px) and (max-width:992px)"
-        href="/version_sm_tablettes+768px.css" />
-    <link rel="stylesheet" media="screen and (min-width:992px)" href="/version_md_ordinateurs+992px.css" />
+        href="css/version_sm_tablettes+768px.css" />
+    <link rel="stylesheet" media="screen and (min-width:992px)" href="css/version_md_ordinateurs+992px.css" />
 
     <!--<div class="col-xs-2 col-sm-6 col-md-12"-->
     <!--xs (telephones<768) sm (tablettes>768px) md moyen (ordi>992px) lg grand ecrans (>1200px)-->
@@ -65,7 +65,8 @@
                 <form action="#" method="GET">
                     <div>
                         <input type="search" id="site-search" name="lieu">
-                        <button type="submit" class="boutton">Rechercher</button>
+                        <button type="submit" class="boutton_mot">Rechercher</button>
+                        <button type="submit" class="boutton_loupe"><i class="fas fa-search"></i></button>
                     </div>
                 </form>
             </div>
@@ -75,7 +76,7 @@
                     <h4>Filtres</h4>
                 </div>
                 <!--onglets des filtres-->
-                <div class="rubrique theme versionxs">
+                <div class="rubrique theme versionxs">                
                     <span class="sujet">Économique</span>
                     <div class="iconefilter">
                         <span><i class="fas fa-money-bill-wave"></i></span>
@@ -83,11 +84,12 @@
 
                 </div>
                 <div class="rubrique theme versionxs">
-                    <span class="sujet versionxs">Famillial</span>
+                    <span class="sujet">Famillial</span>
                     <div class="iconefilter">
                         <span><i class="fas fa-child"></i></span>
                     </div>
                 </div>
+
                 <div class="rubrique theme">
                     <span class="sujet">Romantique</span>
                     <div class="iconefilter">
@@ -372,9 +374,8 @@
     </div>
 
     <!--Fin de page-->
-
+<footer>
     <div class="wrapper5">
-        <footer>
             <div class="p1">
                 <h4 class="titrefooter">A propos</h4>
                 <p>Fonctionnement du site</p>
@@ -391,8 +392,8 @@
                 <p>Centre d'aide</p>
                 <p>Nous contacter</p>
             </div>
-        </footer>
     </div>
+</footer>   
 </body>
 
 </html>
