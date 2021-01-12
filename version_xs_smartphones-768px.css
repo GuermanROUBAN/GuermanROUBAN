@@ -101,7 +101,7 @@ align-items: center;
 display:flex;
 flex-direction: row;
 padding-left: 5px;
-align-items: center;
+
 }
 
 .iconeposition /*icone avant le formulaire*/
@@ -151,210 +151,124 @@ margin:-20px;
 
 /* incone de l'onglet filtre*/
 
-
 .filtres
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;   /*influe sur la position de la ligne*/
-    margin-bottom: 26px;
+   display:flex;
+   flex-wrap: wrap;
+   margin-top: 30px;   /*influe sur la position de la ligne*/
+   margin-bottom: 26px;
+}
+
+.versionxs
+{
+   display: flex;
+   background-color: yellow;
 }
 
 .rubrique
 {
-    display: flex;
-    flex:wrap;
-    justify-items: center;
-    border: 3px #F2F2F2 solid;
-    border-radius: 45px;
-    height: 48px;
-    margin-bottom: -2px;
-    margin-top: -2px;
-    margin-left: -2px;
+   border: 3px #F2F2F2 solid;
+   border-radius: 45px;
+   height: 48px;
+   margin-bottom: -2px;
+   margin-top: -2px;
+   margin-left: -2px;
 }
 
 .rubrique:hover /*option survol des rubriques filtres*/
 {
-    border: solid;
-    border-color: #F2F2F2;
-    color:red
+   border: solid;
+   border-color: #F2F2F2;
+   color:red
 }
 .iconefilter
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 1.2em;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    width: 2.5em;
-    height: 2.5em;
-    border-radius: 34px;
-    padding: 1px;
-    margin-right: 13px;
-    margin-bottom: -2px;
-    margin-top: -2px;
-    margin-left: -2px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   font-size: 1.2em;
+   color: #0065FC;
+   background-color: #DEEBFF;
+   width: 2.5em;
+   height: 2.5em;
+   border-radius: 34px;
+   padding: 1px;
+   margin-right: 13px;
+   margin-bottom: -2px;
+   margin-top: -2px;
+   margin-left: -2px;
 }
 
 .titre
 {
-    display:flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin-right: 25px;    
+   display:flex;
+   width: 100%;
+   margin-right: 25px;    
 }
 .theme
 {
-    display:flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin-left: 0px;
-    margin-right: 40px;
+   display:flex;
+   margin-bottom: 14px;
+   flex-direction: row-reverse;
+   align-items: center;
+   margin-left: 0px;
+
 
 }
 
 .sujet
 {
-    margin-right: 20px;
-    font-weight: bold;
-    font-size: 1em;
+   margin-right: 20px;
+   font-weight: bold;
+   font-size: 1em;
 }
 
 .info
 {
-    display: flex;
-    align-items: center; 
+   display: flex;
+   align-items: center; 
 }
 .texteinfo
 {
-    padding:0 0 0 15px;
-    margin-bottom: 20px;
+   padding:0 0 0 15px;
+   margin-bottom: 20px;
 }
 .iconeinfo
 {
-    font-size: 0.6em; /*reglage de la taille du petit i*/
-    color: #0065FC;
-    border: solid;
-    border-color: #F2F2F2;
-    width: 1.1em;
-    height: 1.1em;
-    border-radius: 20px;
-    text-align: center;
-    margin-bottom: 20px;
-    }
+   font-size: 0.6em; /*reglage de la taille du petit i*/
+   color: #0065FC;
+   border: solid;
+   border-color: #F2F2F2;
+   width: 1.1em;
+   height: 1.1em;
+   border-radius: 20px;
+   text-align: center;
+   margin-bottom: 20px;
+   }
 
-
-
-        /*milieu de page*/
+      /*-------sections 2 et 3 ----------milieu de page---------------------------*/
 
       .wrapper23
       {
          display:flex;
          flex-direction: column;
          width: 100%;
-         background-color:red;
       }
 
 
+      .maincontainer
+      {
+      display: flex;
+      flex-wrap:  wrap;
+      width:100%;
+      margin:auto;
+      justify-content: space-between;
 
-        .maincontainer
-        {
-        display: flex;
-        flex-wrap:  wrap;
-        width:100%;
-        margin:auto;
-        justify-content: space-between;
-
-        }
-
-        /* section2 hebergements*/
-
-        #section2
-        {
-        display: flex;
-        flex-wrap: wrap;
-         order:2;
-        justify-content: space-between;
-        background-color:#F2F2F2;
-        border-radius: 16px;
-        background-color:orange;
-        }
-
-        /*titre*/
-
-        .titre2
-        {
-        display:flex;
-        justify-content: flex-start;
-        width: 100%;
-        margin: 40 0 20 0px;
-        padding-left: 15px;
-        }
-
-        /*body section 2 pannel des offres*/
-
-        .section2body
-        {   
-        display: flex;
-        flex-wrap: wrap;
-         width: 100%;
-         justify-content: space-around;
-        border-radius: 16px;
-        }
-
-        .element2images
-        {
-        width: 325px;
-        height: 114px;
-        border-top-left-radius: 16px;
-        border-top-right-radius: 16px;
-        }
-
-        .element2
-        {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width:auto;
-        background-color:white;
-        border-radius: 16px;
-        padding: 5px;
-        box-shadow: 10px 5px 5px #e9e5e5;
-        margin-bottom: 15px;
-        }
-
-        .element2 h4
-        {
-        margin-top: 5px;
-        margin-bottom: 0px;
-        padding-left: 15px;
-        color:black;
-        }
-
-        .element2 p
-        {
-        margin-top: 5px;
-        margin-bottom: 0;
-        padding-left: 15px;
-        color:black;
-        font-weight: 400; /*epaisseur de la police du texte de description*/
-        }
-
-        .information a
-        {
-        display:flex;
-        align-items: center;
-        color:black;
-        font-weight: 600;
-        margin:15px;
-        margin-left: 30px;
-        }
+      }
 
 
-         /* section 3 les plus populaires*/
+         /* ------------------section 3 les plus populaires-----------------------*/
 
          #section3
          { 
@@ -372,7 +286,7 @@ margin:-20px;
          display: flex;
          justify-content: space-around;
          width: 100%;
-         background-color: blueviolet;
+
          }
          
          .titre3
@@ -410,7 +324,7 @@ margin:-20px;
          margin-bottom: 10px;
          padding:5px 5px;
          border-radius:16px;
-         background-color: pink;
+
          }
          .element3images
          {
@@ -442,54 +356,141 @@ margin:-20px;
          margin-top: 10px;
    }
 
-/*Fin de page*/
 
 
-            /* section4 activités*/
+      /* -----------------------------section2 hebergements-------------------------------*/
+
+      #section2
+      {
+      display: flex;
+      flex-wrap: wrap;
+      order:2;
+      justify-content: space-between;
+      border-radius: 16px;;
+      }
+
+      /*titre*/
+
+      .titre2
+      {
+      display:flex;
+      justify-content: flex-start;
+      width: 100%;
+      margin: 40 0 20 0px;
+      padding-left: 15px;
+      }
+
+      /*body section 2 pannel des offres*/
+
+      .section2body
+      {   
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-around;
+      border-radius: 16px;
+      }
+
+      .element2images
+      {
+      width: 325px;
+      height: 114px;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      }
+
+      .element2
+      {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width:auto;
+      background-color:white;
+      border-radius: 16px;
+      padding: 5px;
+      box-shadow: 10px 5px 5px #e9e5e5;
+      margin-bottom: 15px;
+      }
+
+      .element2 h4
+      {
+      margin-top: 5px;
+      margin-bottom: 0px;
+      padding-left: 15px;
+      color:black;
+      }
+
+      .element2 p
+      {
+      margin-top: 5px;
+      margin-bottom: 0;
+      padding-left: 15px;
+      color:black;
+      font-weight: 400; /*epaisseur de la police du texte de description*/
+      }
+
+      .information a
+      {
+      display:flex;
+      align-items: center;
+      color:black;
+      font-weight: 600;
+      margin:15px;
+      margin-left: 20px;
+      }
+
+/*----------------------------------Fin de page----------------------------------------*/
+
+
+/* ---------------------------------section4 activités---------------------------------*/
 
             .wrapper4
             {
             display:flex;
             flex-wrap: wrap;
             min-width: 100%;
-            margin:auto;
+            justify-content: space-around;
             }
 
-            #section4
+            .section4body 
             {
-            width: 100%;
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: space-around;
+               margin-bottom: 30px;
+
+            }
+            .contenaire4
+            {
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: space-around;
             }
 
             .titre4 h2/*titres des images dans la section4 -> activités*/
             {
-            margin-top: 60px;
-            margin-bottom: 25px;
-            padding-left: 10px;    
+               display:flex;
+               justify-content: flex-start;
+               width: 100%;
+               margin: 40 30 25 0px;
+               padding-left: 15px; 
             }
-            .section4body
-            {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-            justify-content: space-between;
-            }
-            .contenaire4
-            {
-            display:flex;
-            flex-direction:column;
-            justify-content: space-between;
-            }
+
 
             .element4
             {
-            background-color: white;
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin-bottom: 20px;
             border-radius: 16px;
             box-shadow: 10px 5px 5px #F2F2F2;
-            padding-bottom: 20px;
             }
 
             .element4images
             {
+            width: 333px;
+            height: 133px;
             border-top-right-radius: 16px;
             border-top-left-radius: 16px;
             }
@@ -503,12 +504,16 @@ margin:-20px;
 
 
             
-/*Footer*/
+/*----------------------------------------Footer------------------------------------------*/
 
 footer
 {
 display:flex;
 flex-wrap: wrap;
+flex-direction: column;
 width: 100%;
+padding-top: 20px;
+padding-left: 20px;
 background-color:#F2F2F2;
 }
+
