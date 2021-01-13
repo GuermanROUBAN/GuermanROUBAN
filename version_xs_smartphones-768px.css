@@ -245,7 +245,7 @@ a {
   border-radius: 20px;
   margin-bottom: 20px;
   position:relative;
-  top:-8px;
+  top:-13px;
 }
 
 /*milieu de page*/
@@ -331,14 +331,6 @@ a {
   font-weight: 400; /*epaisseur de la police du texte de description*/
 }
 
-.information a {
-  display: flex;
-  align-items: center;
-  color: black;
-  font-weight: 600;
-  margin: 20px;
-  margin-left: 20px;
-}
 
 /* section 3 les plus populaires*/
 
@@ -417,6 +409,14 @@ a {
   margin-top: 20px;
   margin-bottom:0px;
 }
+.information a {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: 600;
+  margin: 20px;
+  margin-left: 20px;
+}
 
 /*Fin de page*/
 
@@ -434,7 +434,7 @@ a {
 }
 
 .titre4 h2/*titres des images dans la section4 -> activités*/ {
-  margin-top: 60px;
+  margin-top: 45px;
   margin-bottom: 25px;
   padding-left: 10px;
 }
