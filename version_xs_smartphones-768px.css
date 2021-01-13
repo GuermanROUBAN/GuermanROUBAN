@@ -280,8 +280,10 @@ a {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  margin: 40 0 20 0px;
-  padding-left: 15px;
+  margin-top:20px;
+  margin-bottom:10px;
+  padding-left: 20px;
+
 }
 
 /*body section 2 pannel des offres*/
@@ -295,7 +297,8 @@ a {
 }
 
 .element2images {
-  width: 325px;
+  
+  width: auto;
   height: 114px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
@@ -305,12 +308,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: auto;
+  width: 334px;
   background-color: white;
   border-radius: 16px;
   padding: 5px;
   box-shadow: 10px 5px 5px #e9e5e5;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .element2 h4 {
@@ -333,8 +336,8 @@ a {
   align-items: center;
   color: black;
   font-weight: 600;
-  margin: 15px;
-  margin-left: 30px;
+  margin: 20px;
+  margin-left: 20px;
 }
 
 /* section 3 les plus populaires*/
