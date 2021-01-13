@@ -227,7 +227,7 @@ a {
   align-content: center;
   align-items: center;
   padding-left: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   overflow:right;
   width:90%
 }
@@ -346,7 +346,7 @@ a {
   width: 100%;
   justify-items: space-between;
   background-color: #f2f2f2;
-  border-radius: 16px;
+ 
 }
 
 .section3head {
@@ -358,13 +358,16 @@ a {
 .titre3 {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
   width: 100%;
-  margin: 40 0 20 0px;
+  margin-top:20px;
   padding-left: 15px;
 }
 .icone3 {
   display: flex;
-  justify-items: baseline;
+  margin-top:20px;
+  margin-right:15px;
+  align-items: center;
 }
 
 /*body pannel des offres*/
@@ -373,14 +376,14 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   justify-content: space-around;
 }
 
 .element3 {
   display: inline-flex;
   background-color: white;
-  width: 342px;
+  width: 334px;
   margin-bottom: 10px;
   padding: 5px 5px;
   border-radius: 16px;
@@ -403,11 +406,13 @@ a {
 }
 
 .element3description p {
+  margin-bottom:0px;
   color: black;
   font-weight: 400;
 }
 .element3description i {
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom:0px;
 }
 
 /*Fin de page*/
