@@ -76,8 +76,19 @@ a {
 /*--------section1 - debut de page-------------*/
 
 .wrapper1 {
+  height: 100%;
+  margin-top: 35px;
   padding-left: 20px;
  background-color: coral;
+
+}
+
+.trouvez h1{
+  margin-top:0;
+}
+
+.trouvez p{
+  margin:17px 0;
 }
 
 .search /* champs dans le quel se trouve la bare de recherche (formulaire)*/ {
@@ -95,8 +106,8 @@ a {
   border: solid #f2f2f2;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
-  height: 48px;
-  width: 52px;
+  height: 47px;
+  width: 47px;
 }
 
 #site-search /*formulaire*/ {
@@ -131,13 +142,14 @@ a {
 {
    display:flex;
    flex-wrap: wrap;
-   margin-top: 30px;   /*influe sur la position de la ligne*/
-   margin-bottom: 26px;
+   margin-top: 15px;   /*influe sur la position de la ligne*/
+   margin-bottom: 36px;
 }
 
 .versionxs
 {
    display: flex;
+   margin-right: 10px;
    background-color: yellow;
 }
 
@@ -171,7 +183,7 @@ a {
    height: 2.5em;
    border-radius: 34px;
    padding: 1px;
-   margin-right: 13px;
+   margin-right: 11px;
    margin-bottom: -2px;
    margin-top: -2px;
    margin-left: -2px;
@@ -181,7 +193,13 @@ a {
 {
    display:flex;
    width: 100%;
-   margin-right: 25px;    
+   margin-right: 25px;
+   
+ 
+}
+.titre h4
+{
+  margin:18px 0;
 }
 .theme
 {
@@ -192,7 +210,7 @@ a {
    margin-left: 0px;
 }
 .sujet {
-  margin-right: 20px;
+  margin-right: 18px;
   font-weight: bold;
   font-size: 1em;
 }

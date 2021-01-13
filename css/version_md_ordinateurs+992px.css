@@ -108,6 +108,7 @@ a {
 
 #site-search/*formulaire*/ {
   height: 50px;
+  width: 237px;
   border-top: solid;
   border-bottom: solid;
   border-right: none;
@@ -270,7 +271,7 @@ a {
   max-height: 200px;
   border-radius: 16px;
   padding: 5px;
-  box-shadow: 4px 5px 4px 2px #e9e5e5;
+  box-shadow: 4px 3px 15px 2px #e9e5e5;
 }
 
 .element2 h4 {
@@ -348,7 +349,7 @@ a {
   padding: 5px 5px;
   border-radius: 16px;
   margin-bottom: 30px;
-  box-shadow: 4px 5px 4px 2px #e9e5e5;
+  box-shadow: 4px 3px 15px 2px #e9e5e5;
 }
 .element3images {
   border-top-left-radius: 16px;
@@ -413,7 +414,7 @@ a {
 .element4 {
   background-color: white;
   border-radius: 16px;
-  box-shadow: 4px 5px 4px 2px #e9e5e5;
+  box-shadow: 4px 3px 15px 2px #e9e5e5;
   padding-bottom: 20px;
 }
 
