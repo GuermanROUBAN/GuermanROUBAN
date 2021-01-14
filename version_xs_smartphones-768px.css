@@ -1,8 +1,6 @@
-body
-{
-   margin:0;
+body {
+  margin: 0;
 }
-
 
 .wrapper {
   display: flex;
@@ -21,7 +19,6 @@ body
 }
 
 .navigation /* hébergements et navigation*/ {
-  
   display: block;
   width: 100%;
   height: 2;
@@ -29,7 +26,6 @@ body
   justify-content: space-around;
   font-size: 16px;
   order: 3;
-  
 }
 
 .inscription /*s'inscrire*/ {
@@ -60,7 +56,7 @@ a {
   display: flex;
   width: 100%;
   border-bottom: solid;
-  border-color:grey;
+  border-color: grey;
   justify-content: center;
   align-items: center;
   block-size: 20px;
@@ -79,22 +75,20 @@ a {
   height: 100%;
   margin-top: 35px;
   padding-left: 20px;
- background-color: coral;
-
+  background-color: coral;
 }
 
-.trouvez h1{
-  margin-top:0;
+.trouvez h1 {
+  margin-top: 0;
 }
 
-.trouvez p{
-  margin:17px 0;
+.trouvez p {
+  margin: 17px 0;
 }
 
 .search /* champs dans le quel se trouve la bare de recherche (formulaire)*/ {
   display: flex;
-  width:100%;
-
+  width: 100%;
 }
 
 .iconeposition /*icone avant le formulaire*/ {
@@ -120,9 +114,8 @@ a {
   border-color: #f2f2f2;
   font-weight: bold;
 }
-.boutton_mot
-{
-   display:none;
+.boutton_mot {
+  display: none;
 }
 .boutton_loupe /*boutton de recherche du formulaire*/ {
   border: solid #0065fc;
@@ -136,78 +129,67 @@ a {
   margin: -20px;
 }
 
-
 /* incone de l'onglet filtre*/
-.filtres
-{
-   display:flex;
-   flex-wrap: wrap;
-   margin-top: 15px;   /*influe sur la position de la ligne*/
-   margin-bottom: 36px;
+.filtres {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px; /*influe sur la position de la ligne*/
+  margin-bottom: 36px;
 }
 
-.versionxs
-{
-   display: flex;
-   margin-right: 10px;
-   background-color: yellow;
+.versionxs {
+  display: flex;
+  margin-right: 10px;
+  background-color: yellow;
 }
 
-.rubrique
-{
-  display:flex; 
-  border: 3px #F2F2F2 solid;
-   border-radius: 45px;
-   height: 48px;
-   margin-bottom: -2px;
-   margin-top: -2px;
-   margin-left: -2px;
+.rubrique {
+  display: flex;
+  border: 3px #f2f2f2 solid;
+  border-radius: 45px;
+  height: 48px;
+  margin-bottom: -2px;
+  margin-top: -2px;
+  margin-left: -2px;
 }
 
-.rubrique:hover /*option survol des rubriques filtres*/
-{
-   border: solid;
-   border-color: #F2F2F2;
-   color:red
+.rubrique:hover /*option survol des rubriques filtres*/ {
+  border: solid;
+  border-color: #f2f2f2;
+  color: red;
 }
-.iconefilter
-{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   font-size: 1.2em;
-   color: #0065FC;
-   background-color: #DEEBFF;
-   width: 2.5em;
-   height: 2.5em;
-   border-radius: 34px;
-   padding: 1px;
-   margin-right: 11px;
-   margin-bottom: -2px;
-   margin-top: -2px;
-   margin-left: -2px;
+.iconefilter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2em;
+  color: #0065fc;
+  background-color: #deebff;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 34px;
+  padding: 1px;
+  margin-right: 11px;
+  margin-bottom: -2px;
+  margin-top: -2px;
+  margin-left: -2px;
 }
 
-.titre
-{
-   display:flex;
-   width: 100%;
-   margin-right: 25px;
-   
- 
+.titre {
+  display: flex;
+  width: 100%;
+  margin-right: 25px;
 }
-.titre h4
-{
-  margin:18px 0;
+.titre h4 {
+  margin: 18px 0;
 }
-.theme
-{
-   display:flex;
-   margin-bottom: 14px;
-   flex-direction: row-reverse;
-   align-items: center;
-   margin-left: 0px;
+.theme {
+  display: flex;
+  margin-bottom: 14px;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-left: 0px;
 }
 .sujet {
   margin-right: 18px;
@@ -222,18 +204,17 @@ a {
   align-content: center;
 }
 .texteinfo {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
   padding-left: 10px;
   margin-bottom: 25px;
-  overflow:right;
-  width:90%
+  overflow: right;
+  width: 90%;
 }
 .iconeinfo {
-
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1em; /*reglage de la taille du petit i*/
@@ -244,8 +225,8 @@ a {
   height: 1.2em;
   border-radius: 20px;
   margin-bottom: 20px;
-  position:relative;
-  top:-13px;
+  position: relative;
+  top: -13px;
 }
 
 /*milieu de page*/
@@ -280,10 +261,9 @@ a {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  margin-top:20px;
-  margin-bottom:10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   padding-left: 20px;
-
 }
 
 /*body section 2 pannel des offres*/
@@ -297,7 +277,6 @@ a {
 }
 
 .element2images {
-  
   width: auto;
   height: 114px;
   border-top-left-radius: 16px;
@@ -331,7 +310,6 @@ a {
   font-weight: 400; /*epaisseur de la police du texte de description*/
 }
 
-
 /* section 3 les plus populaires*/
 
 #section3 {
@@ -341,7 +319,6 @@ a {
   width: 100%;
   justify-items: space-between;
   background-color: #f2f2f2;
- 
 }
 
 .section3head {
@@ -355,13 +332,13 @@ a {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  margin-top:20px;
+  margin-top: 20px;
   padding-left: 15px;
 }
 .icone3 {
   display: flex;
-  margin-top:20px;
-  margin-right:15px;
+  margin-top: 20px;
+  margin-right: 15px;
   align-items: center;
 }
 
@@ -401,13 +378,13 @@ a {
 }
 
 .element3description p {
-  margin-bottom:0px;
+  margin-bottom: 0px;
   color: black;
   font-weight: 400;
 }
 .element3description i {
   margin-top: 20px;
-  margin-bottom:0px;
+  margin-bottom: 0px;
 }
 .information a {
   display: flex;
@@ -422,71 +399,6 @@ a {
 
 /* section4 activités*/
 
-.wrapper4 {
-  display: flex;
-  flex-wrap: wrap;
-  min-width: 100%;
-  margin: auto;
-}
-
-#section4 {
-  width: 100%;
-}
-
-.titre4 h2/*titres des images dans la section4 -> activités*/ {
-  margin-top: 45px;
-  margin-bottom: 25px;
-  padding-left: 10px;
-}
-.section4body {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
-}
-.contenaire4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.element4 {
-  background-color: white;
-  border-radius: 16px;
-  box-shadow: 10px 5px 5px #f2f2f2;
-  padding-bottom: 20px;
-}
-
-.element4images {
-  border-top-right-radius: 16px;
-  border-top-left-radius: 16px;
-}
-
-.section4body h4 {
-  padding-left: 10px;
-  color: black;
-}
-
-/*Footer*/
-
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  background-color: #f2f2f2;
-}
-
-/*Fin de page*/
-
-/* section4 activités*/
-
-.wrapper4 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: auto;
-}
-
 #section4 {
   display: flex;
   flex-wrap: wrap;
@@ -495,39 +407,48 @@ footer {
 }
 
 .titre4 h2/*titres des images dans la section4 -> activités*/ {
-  margin-top: 60px;
-  margin-bottom: 25px;
-  padding-left: 10px;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding-left: 20px;
 }
 .section4body {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  height: 452px;
-  justify-content: space-between;
+  margin: 0 20px;
 }
 .contenaire4 {
-  display: flex;
-  flex-direction: column;
-  max-height: 448px;
   justify-content: space-between;
 }
 
 .element4 {
+  display: flex;
+  flex-wrap: wrap;
+
   background-color: white;
+  width: 100%;
   border-radius: 16px;
   box-shadow: 10px 5px 5px #f2f2f2;
-  padding-bottom: 20px;
+  margin-bottom: 22px;
 }
 
-.element4images {
+.element4images{
+  width: 100%;
+  height: 131px;
+
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
+}
+
+.smart{
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.deskt
+{
+  display:none;
 }
 
 .section4body h4 {
   padding-left: 10px;
   color: black;
 }
-
-/*Footer*/
