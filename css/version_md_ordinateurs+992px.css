@@ -423,6 +423,11 @@ a {
   border-top-left-radius: 16px;
 }
 
+.smart
+{
+  display:none;
+}
+
 .section4body h4 {
   padding-top: 20px;
   padding-left: 10px;
