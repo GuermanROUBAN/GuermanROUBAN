@@ -38,7 +38,7 @@ a:hover {text-decoration:none;}
 ul, li {list-style: none;}
 img{vertical-align: top;}
 
-h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
+
 
 h4 {
 margin-top: 0px;
@@ -49,6 +49,7 @@ margin-bottom: 2px;
 
 header {
 display: flex;
+height: 200px;
 }
 
 .wrapper {
@@ -97,24 +98,27 @@ li
 .inscription {
 	display: flex;
 	flex-direction: row;
-
 	width:100%;
 	font-size: 20px;
+	font-weight: 600;
+	block-size: 60px;
 	align-items: center;
 	justify-content: center;
 
+	color: red;
+	cursor:pointer;
+	background-color: #f2f2f2;
 
 }
 
  .nav1 a {
+	font-weight: 600;
 	color: black;
  }
  
- .nav2 a {
-	
-	
+ .nav2 a {	
+	font-weight: 600;
 	color: black;
-	
  }
  .block /* menu de navigation */ {
 	display: flex;
@@ -129,12 +133,338 @@ li
 	border: solid;
 	border-radius: 16px;
 	border-color: #0065fc;
+	color:black;
  }
  
 
 .inscription:hover{
 	border: solid;
+	margin: 2px;
 	border-radius: 16px;
 	border-color: #0065fc;
-	color: black;
 }
+
+
+/*Début de page*/
+
+/*section1*/
+
+#section1 {
+	width: 100%;
+ }
+ 
+
+ .trouvez h1 {
+	display:flex;
+	justify-content: center;
+	padding-top: 20px;
+
+ }
+ 
+ .trouvez p {
+	display:flex;
+	justify-content: center;
+	padding-top: 20px;
+	margin-bottom: 20px;
+ }
+
+ /* bloc recherche */
+ 
+ .search {
+	display: flex;
+	flex-direction: row;
+	width:100%;
+	margin-bottom: 20px;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+ }
+ 
+ .iconeposition {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: #f2f2f2;
+	border: solid #f2f2f2;
+	border-top-left-radius: 16px;
+	border-bottom-left-radius: 16px;
+	height: 50px;
+	width: 100px;
+ }
+ 
+ #site-search/*formulaire*/ {
+	height: 50px;
+	width: 400px;
+	border-top: solid;
+	border-bottom: solid;
+	border-right: none;
+	border-left: none;
+	border-color: #f2f2f2;
+	font-weight: bold;
+ }
+ 
+ .boutton_mot {
+	border: solid #0065fc;
+	background-color: #0065fc;
+	color:white;
+	font-weight: 700;
+	border-top-right-radius: 16px;
+	border-bottom-right-radius: 16px;
+	width: 8em;
+	height: 50px;
+	margin: -5px;
+ }
+ .boutton_loupe {
+	display: none;
+ }
+ .boutton_mot:hover {
+	cursor: pointer;
+ }
+ 
+ .filtres {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	margin-bottom: 20px;
+ }
+ 
+ .rubrique {
+	display: flex;
+	flex: wrap;
+	justify-items: center;
+	border: 3px #f2f2f2 solid;
+	border-radius: 45px;
+	height: 48px;
+	margin-bottom: 10px;
+	margin-top: -2px;
+	margin-left: -2px;
+ }
+ 
+ .rubrique:hover /*option survol des rubriques filtres*/ {
+	border: solid;
+	border-color: #f2f2f2;
+	color: red;
+	cursor: pointer;
+ }
+ .iconefilter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 1.2em;
+	color: #0065fc;
+	background-color: #deebff;
+	width: 2.5em;
+	height: 2.5em;
+	border-radius: 34px;
+	padding: 1px;
+	margin-right: 10px;
+	margin-bottom: -2px;
+	margin-top: -2px;
+	margin-left: -2px;
+ }
+ 
+ .titre {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	margin-right: 10px;
+ }
+ .theme {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+
+ }
+ 
+ .sujet {
+	margin-right: 20px;
+	font-weight: bold;
+	font-size: 1em;
+ }
+ 
+ .info {
+	display: flex;
+	margin-top: 20px;
+	justify-content: center;
+	align-items: center;
+ }
+ .texteinfo {
+	padding: 0 0 0 15px;
+	margin-bottom: 20px;
+ }
+ .iconeinfo {
+	font-size: 0.6em; /*reglage de la taille du petit i*/
+	color: #0065fc;
+	border: solid;
+	border-color: #f2f2f2;
+	width: 1.1em;
+	height: 1.1em;
+	border-radius: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+
+ }
+ 
+ /*milieu de page*/
+ 
+ .maincontainer {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+ }
+ 
+ 
+/* section2 hebergements*/
+
+#section2 {
+	justify-content: space-between;
+	background-color: #f2f2f2;
+	border-radius: 16px;
+	height: 100%;
+ }
+ 
+ /*titre*/
+ 
+ .titre2 {
+	display: flex;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	justify-content: center;
+ }
+ 
+ /*body section 2 pannel des offres*/
+ 
+ .section2body {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+	justify-content: space-around;
+	border-radius: 16px;
+	max-width: 880px;
+ }
+ 
+ .element2images {
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	
+ }
+ 
+ .element2 {
+	display: inline-block;
+	background-color: white;
+	max-width: 250px;
+	max-height: 200px;
+	border-radius: 16px;
+	padding: 5px;
+	box-shadow: 4px 3px 15px 2px #e9e5e5;
+	margin-bottom: 20px;
+ }
+ 
+ .element2 h4 {
+	margin-top: 5px;
+	margin-bottom: 0px;
+	padding-left: 15px;
+	color: black;
+ }
+ 
+ .element2 p {
+	margin-top: 5px;
+	margin-bottom: 0;
+	padding-left: 15px;
+	color: black;
+	font-weight: 400; /*epaisseur de la police du texte de description*/
+ }
+ 
+ .information a {
+	display: flex;
+	align-items: center;
+	color: black;
+	font-weight: 600;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	margin-left:40px;
+ }
+ /* section 3 les plus populaires*/
+ 
+ #section3 {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	background-color: #f2f2f2;
+	border-radius: 16px;
+ }
+ 
+ .section3head {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 10%;
+ }
+ 
+ .titre3 {
+	display: flex;
+	height: 10%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	justify-content: center;
+ }	
+ 
+ .icone3 {
+	display: flex;
+	justify-items: baseline;
+	height: 10%;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	justify-content: center;
+ }
+ 
+ /*body pannel des offres*/
+ 
+ .section3body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	height: 80%;
+ }
+ 
+ .element3 {
+	display: inline-flex;
+	background-color: white;
+	width: 342px;
+	height: 134px;
+	padding: 5px 5px;
+	border-radius: 16px;
+	margin-bottom: 30px;
+	box-shadow: 4px 3px 15px 2px #e9e5e5;
+ }
+ .element3images {
+	border-top-left-radius: 16px;
+	border-bottom-left-radius: 16px;
+ }
+ .element3description {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+ }
+ 
+ .element3description h4 {
+	margin-top: 10px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	color: black;
+ }
+ 
+ .element3description p {
+	color: black;
+	font-weight: 400;
+ }
+ .element3description i {
+	margin-top: 10px;
+ }
+ 
+ /*Fin de page*/
