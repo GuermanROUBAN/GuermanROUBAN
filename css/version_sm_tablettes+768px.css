@@ -1,23 +1,140 @@
-.wrapper
+
+*
 {
-	display:flex;
-	width:100%;
-	background-color: red;
-	align-items: center;
+padding: 0;
+margin: 0;
+border:0;
 }
-.block
+*,*:before,*:after
 {
-   block-size: 100px;
-   display: flex;
-   align-items: center;
-   margin-right: 20px;
-   padding-right:20px;
-   margin-left: 20px;
-   padding-left:20px;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+:focus, :active{outline:none;}
+a:focus, a:active{outline:none;}
+
+nav, footer, header, aside{display:block}
+
+html, body
+{
+height: 100%;
+width: 100%;
+font-size: 100%;
+line-height: 1;
+font-size: 14px;
+-ms-text-size-adjust: 100%;
+-moz-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
 }
 
-.block:hover
+input, button, textarea {font-family: inherit;}
+
+input::-ms-clear{display:none}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0 border:0;}
+a, a:visited {text-decoration:none;}
+a:hover {text-decoration:none;}
+ul, li {list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6 {font-size: inherit;font-weight: 400;}
+
+h4 {
+margin-top: 0px;
+margin-bottom: 2px;
+}
+
+/* Header */
+
+header {
+display: flex;
+}
+
+.wrapper {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+
+}
+
+.logo {
+display: flex;
+width: 100%;
+margin:20px 0;
+justify-content: center;
+
+}
+
+.navigation {
+display: flex;
+flex-direction: row;
+width:100%;
+justify-content: space-between;
+
+}
+
+
+nav
 {
-   border-bottom: solid; /*trait de soulignement au passage du curseur*/
-   border-color #0065FC;
+	width:100%;
+
+}
+
+ul
+{
+	display: flex;
+	/*influe sur le positionnement de la ligne sous le logo*/
+	justify-content: space-around; 
+}
+li
+{
+	
+	font-size: 20px;
+}
+
+
+.inscription {
+	display: flex;
+	flex-direction: row;
+
+	width:100%;
+	font-size: 20px;
+	align-items: center;
+	justify-content: center;
+
+
+}
+
+ .nav1 a {
+	color: black;
+ }
+ 
+ .nav2 a {
+	
+	
+	color: black;
+	
+ }
+ .block /* menu de navigation */ {
+	display: flex;
+	width: 100%;
+	border-color: grey;
+	justify-content: center;
+	align-items: center;
+	block-size: 60px;
+ }
+ 
+ .block:hover {
+	border: solid;
+	border-radius: 16px;
+	border-color: #0065fc;
+ }
+ 
+
+.inscription:hover{
+	border: solid;
+	border-radius: 16px;
+	border-color: #0065fc;
+	color: black;
 }
