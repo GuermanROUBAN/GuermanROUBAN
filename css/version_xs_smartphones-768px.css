@@ -420,7 +420,16 @@ a {
   margin-bottom: 30px;
 }
 .contenaire4 {
+  display:flex;
+  flex-wrap: wrap;
+  width:100%;
   justify-content: space-between;
+}
+
+.frioul
+{
+  display:flex;
+  width: 100%;
 }
 
 .element4 {

@@ -104,7 +104,7 @@ li
 	block-size: 60px;
 	align-items: center;
 	justify-content: center;
-
+	color:black;
 	color: red;
 	cursor:pointer;
 	background-color: #f2f2f2;
@@ -142,6 +142,10 @@ li
 	margin: 2px;
 	border-radius: 16px;
 	border-color: #0065fc;
+}
+.inscrion a
+{
+	color:black;
 }
 
 
@@ -315,6 +319,7 @@ li
 	flex-wrap: wrap;
 	width: 100%;
 	height: 100%;
+	margin-bottom: 20px;
  }
  
  
@@ -473,4 +478,100 @@ li
 	margin-top: 10px;
  }
  
+
+/* section4 activités*/
+
+#section4 {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	background-color: #f2f2f2;
+ }
+ .titre4 h2/*titres des images dans la section4 -> activités*/ {
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	padding-left: 20px;
+ }
+ .section4body {
+	width: 70%;
+	justify-content: center;
+	margin: 0 20px;
+	margin-bottom: 30px;	
+ }
+ .contenaire4 {
+	width:100%;
+	justify-content: space-between;
+ }
+ 
+ .element4 {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: white;
+	width: 100%;
+	border-radius: 16px;
+	box-shadow: 4px 3px 15px 2px #e9e5e5;
+	margin-bottom: 22px;
+ }
+ 
+ .element4images {
+	width: 100%;
+	height: 131px;
+	border-top-right-radius: 16px;
+	border-top-left-radius: 16px;
+ }
+ 
+ .smart {
+	width: 100%;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+ }
+ .deskt {
+	display: none;
+ }
+ 
+ .section4body h4 {
+	margin:20px 0px;
+	padding-left: 10px;
+	color: black;
+ }
  /*Fin de page*/
+
+ 
+/*Footer*/
+
+footer {
+	display: flex;
+	width: 100%;
+
+ }
+ 
+ .wrapper5 {
+	display: flex;
+	width: 100%;
+	height: 200px;
+	margin-top: 40px;
+	justify-content: space-around;
+
+
+}
+ .p1 {
+	margin-bottom: 0px;
+ }
+ .p2 {
+	padding-right: 40px;
+	margin-bottom: 0px;
+ }
+ 
+ .p3 {
+	margin-bottom: 0px;
+ }
+ .titrefooter {
+	padding-bottom: 10px;
+ }
+ 
+ .wrapper5 p
+ {
+	margin-bottom: 5px;
+ }
