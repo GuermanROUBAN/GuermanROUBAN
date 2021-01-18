@@ -46,9 +46,9 @@ a {
 }
 
 .block {
-  block-size: 100px;
   display: flex;
   align-items: center;
+  padding-top: 13px;
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -120,7 +120,7 @@ a {
 .boutton_mot {
   border: solid #0065fc;
   background-color: #0065fc;
-  color:white;
+  color: white;
   font-weight: 700;
   border-top-right-radius: 16px;
   border-bottom-right-radius: 16px;
@@ -144,7 +144,7 @@ a {
 
 .rubrique {
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
   justify-items: center;
   border: 3px #f2f2f2 solid;
   border-radius: 45px;
@@ -304,7 +304,7 @@ a {
   flex-wrap: wrap;
   width: 413px;
   height: 627px;
-  justify-items: space-between;
+  justify-content: space-between;
   background-color: #f2f2f2;
   border-radius: 16px;
 }
@@ -423,9 +423,8 @@ a {
   border-top-left-radius: 16px;
 }
 
-.smart
-{
-  display:none;
+.smart {
+  display: none;
 }
 
 .section4body h4 {

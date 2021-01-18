@@ -19,7 +19,6 @@ body {
 .navigation /* hébergements et navigation*/ {
   display: block;
   width: 100%;
-  height: 2;
   align-items: center;
   justify-content: space-around;
   font-size: 16px;
@@ -57,7 +56,7 @@ a {
   border-color: grey;
   justify-content: center;
   align-items: center;
-  block-size: 20px;
+
   margin-top: 20px;
   padding-bottom: 20px;
 }
@@ -212,7 +211,7 @@ a {
   align-items: center;
   padding-left: 10px;
   margin-bottom: 25px;
-  overflow: right;
+
   width: 90%;
 }
 .iconeinfo {
@@ -319,7 +318,7 @@ a {
   flex-wrap: wrap;
   order: 1;
   width: 100%;
-  justify-items: space-between;
+  justify-content: space-between;
   background-color: #f2f2f2;
 }
 
@@ -420,15 +419,14 @@ a {
   margin-bottom: 30px;
 }
 .contenaire4 {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
-  width:100%;
+  width: 100%;
   justify-content: space-between;
 }
 
-.frioul
-{
-  display:flex;
+.frioul {
+  display: flex;
   width: 100%;
 }
 
