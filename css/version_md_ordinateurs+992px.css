@@ -357,42 +357,29 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 413px;
-  height: 627px;
-  justify-content: space-between;
+
   background-color: #f2f2f2;
   border-radius: 16px;
+  background-color: fuchsia;
 }
 
 .section3head {
-  display: flex;
-  justify-content: space-around;
-  width: 413px;
-  height: 10%;
+  display:flex;
+  background-color: blue;
 }
-
-.titre3 {
-  display: flex;
-  height: 10%;
-  margin-left: 0px;
-  margin-right: 40px;
-  margin-top: 20px;
-  margin-bottom: 30px;
+.fleche
+{
+  background-color: white;
+  font-size: 1.1em;
 }
-
-.icone3 {
-  display: flex;
-  justify-items: baseline;
-  height: 10%;
-  margin-top: 20px;
-}
-
 /*body pannel des offres*/
 
 .section3body {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  height: 80%;
+  justify-content: center;
+  background-color: darkgreen;
+  margin-top:25px;
 }
 
 .element3 {
@@ -408,6 +395,7 @@ a {
 .element3images {
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
+
 }
 .element3description {
   display: flex;
