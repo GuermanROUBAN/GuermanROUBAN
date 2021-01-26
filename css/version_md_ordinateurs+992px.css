@@ -42,7 +42,6 @@ img{vertical-align: top;}
 
 header {
   display: flex;
-  
   justify-content: space-between;
 }
 
@@ -215,7 +214,7 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: #0065fc;
   background-color: #deebff;
   width: 2.5em;
@@ -278,7 +277,6 @@ a {
   display: flex;
   width: 1340px;
   max-width: 100%;
-
   margin: auto;
   justify-content: space-between;
 }
@@ -288,7 +286,7 @@ a {
 #section2 {
   justify-content: space-between;
   background-color: #f2f2f2;
-
+  height:100%;
   border-radius: 16px;
 }
 
@@ -296,9 +294,9 @@ a {
 
 .titre2 {
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  margin-left: 30px;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  margin-left: 40px;
 }
 
 /*body section 2 pannel des offres*/
@@ -306,7 +304,8 @@ a {
 .section2body {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  padding: 0 40px 20px 40px;
+  justify-content: space-between;
   border-radius: 16px;
   max-width: 880px;
 }
@@ -319,10 +318,11 @@ a {
 .element2 {
   display: inline-block;
   background-color: white;
-  max-width: 250px;
-  max-height: 200px;
+  min-width: 248px;
+  min-height: 200px;
   border-radius: 16px;
   padding: 5px;
+  margin-bottom: 25px;
   box-shadow: 4px 3px 15px 2px #e9e5e5;
 }
 
@@ -345,9 +345,11 @@ a {
   display: flex;
   align-items: center;
   color: black;
-  font-weight: 600;
-  margin-left: 30px;
-  padding-top: 20px;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-left: 40px;
+  margin-bottom: 50px;
+
 }
 /* section 3 les plus populaires*/
 
