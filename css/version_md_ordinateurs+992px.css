@@ -353,71 +353,28 @@ a {
 }
 /* section 3 les plus populaires*/
 
-#section3 {
+#section3{
+  background-color: tomato;
+
+}.section3head {
+  background-color: paleturquoise;
   display: flex;
-  flex-wrap: wrap;
-  width: 413px;
-
-  background-color: #f2f2f2;
-  border-radius: 16px;
-  background-color: fuchsia;
-}
-
-.section3head {
-  display:flex;
-  background-color: blue;
-}
-.fleche
-{
-  background-color: white;
-  font-size: 1.1em;
-}
-/*body pannel des offres*/
-
-.section3body {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: darkgreen;
-  margin-top:25px;
-}
-
-.element3 {
-  display: inline-flex;
-  background-color: white;
-  width: 342px;
-  height: 134px;
-  padding: 5px 5px;
-  border-radius: 16px;
+  margin-top: 45px;
   margin-bottom: 30px;
-  box-shadow: 4px 3px 15px 2px #e9e5e5;
+  margin-left: 40px;
 }
-.element3images {
-  border-top-left-radius: 16px;
-  border-bottom-left-radius: 16px;
-
+.section3body{
+  background-color:grey;
 }
-.element3description {
+.section3__row{
   display: flex;
-  flex-direction: column;
-  margin-left: 10px;
+  background-color:yellow;
 }
-
-.element3description h4 {
-  margin-top: 10px;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-  color: black;
+.section3__picture{ /*container de l'image*/ 
+ 
 }
-
-.element3description p {
-  color: black;
-  font-weight: 400;
+.section3__texte{
 }
-.element3description i {
-  margin-top: 10px;
-}
-
 /*Fin de page*/
 
 /* section4 activités*/

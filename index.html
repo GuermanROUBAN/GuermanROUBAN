@@ -81,7 +81,12 @@
           <!--champ du formulaire-->
           <form action="#" method="GET">
             <div>
-              <input type="search" placeholder="Marseille, France" id="site-search" name="lieu" />
+              <input
+                type="search"
+                placeholder="Marseille, France"
+                id="site-search"
+                name="lieu"
+              />
               <button type="submit" class="boutton_mot">Rechercher</button>
               <button type="submit" class="boutton_loupe">
                 <i class="fas fa-search"></i>
@@ -277,50 +282,61 @@
         <section id="section3">
           <!--head-->
           <div class="section3head">
-              <h2>Les plus populaires</h2>
-              <span class="fleche"><i class="fas fa-chart-line"></i></span>
+            <div class="section3head__texte"><h2>Les plus populaires</h2></div>
+            <div class="section3head__item">
+              <i class="fas fa-chart-line"></i>
+            </div>
           </div>
+
+
           <!--body pannel des offres-->
+
           <div class="section3body">
             <a href="https://www.google.fr/">
-              <div class="element3">
-                <img
-                  class="element3images"
-                  src="images/hebergements/4_small/Images_mini/Hôtel_Le_soleil_du_matin.jpg"
-                  alt="Hôtel_le_Soleil_du_matin"
-                />
-                <div class="element3description">
-                  <h4>
-                    Hôtel Le soleil du<br />
-                    matin
-                  </h4>
-                  <p>Nuit à partir de <span class="prix">128 €</span></p>
-                  <p>
-                    <span class="avis">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </span>
-                  </p>
-                </div>
+              <div class="section3__row">
+                
+                  <div class="section3__picture">
+                    <img
+                      src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                      alt="Hôtel_le_Soleil_du_matin"
+                    />
+                  </div>
+                  <div class="section3__texte">
+                    <div class="texte__title">
+                      <h4>Hôtel Le soleil du matin</h4>
+                    </div>
+                    <div class="texte__texte">
+                      <p>Nuit à partir de <span class="prix">128 €</span></p>
+                    </div>
+                    <div class="texte__avis">
+                      <span class="avis">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </span>
+                    </div>
+                  </div>
               </div>
             </a>
+            
             <a href="https://www.google.fr/">
-              <div class="element3">
-                <img
-                  class="element3images"
-                  src="images/hebergements/4_small/Images_mini/Au_coeur_de_l'eau_Chambres_d'hôtes.jpg"
-                  alt="Au_coeur_de_l'eau_Chambres_d'hôtes"
-                />
-                <div class="element3description">
-                  <h4>
-                    Au coeur de l'eau<br />
-                    Chambres d'hôtes
-                  </h4>
-                  <p>Nuit à partir de <span class="prix">71 €</span></p>
-                  <p>
+              <div class="section3__row">
+                <div class="section3__picture">
+                  <img
+                    src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                    alt="Au_coeur_de_l'eau_Chambres_d'hôtes"
+                  />
+                </div>
+                <div class="section3__texte">
+                  <div class="texte__title">
+                    <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                  </div>
+                  <div class="texte__texte">
+                    <p>Nuit à partir de <span class="prix">71 €</span></p>
+                  </div>
+                  <div class="texte__avis">
                     <span class="avis">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -328,24 +344,27 @@
                       <i class="fas fa-star"></i>
                       <span class="uncheck"><i class="fas fa-star"></i></span>
                     </span>
-                  </p>
+                  </div>
                 </div>
               </div>
             </a>
+            
             <a href="https://www.google.fr/">
-              <div class="element3">
-                <img
-                  class="element3images"
-                  src="images/hebergements/4_small/Images_mini/Hôtel_Tout_bleu_et_Blanc.jpg"
-                  alt="Hôtel_Tout_bleu_et_Blanc"
-                />
-                <div class="element3description">
-                  <h4>
-                    Hôtel Tout bleu et<br />
-                    Blanc
-                  </h4>
-                  <p>Nuit à partir de <span class="prix">68 €</span></p>
-                  <p>
+              <div class="section3__row">
+                <div class="section3__picture">
+                  <img
+                    src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                    alt="Hôtel_Tout_bleu_et_Blanc"
+                  />
+                </div>
+                <div class="section3__texte">
+                  <div class="texte__title">
+                    <h4>Hôtel Tout bleu et Blanc</h4>
+                  </div>
+                  <div class="texte__texte">
+                    <p>Nuit à partir de <span class="prix">68 €</span></p>
+                  </div>
+                  <div class="texte__avis">
                     <span class="avis">
                       <i class="fas fa-star"></i>
                       <i class="fas fa-star"></i>
@@ -353,7 +372,7 @@
                       <i class="fas fa-star"></i>
                       <span class="uncheck"><i class="fas fa-star"></i></span>
                     </span>
-                  </p>
+                  </div>
                 </div>
               </div>
             </a>
@@ -364,88 +383,93 @@
 
     <!--Fin de page-->
 
-    
-      
     <!--Fin de page-->
     <section id="section4">
       <div class="section4head">
         <h2 id="Activités">Activités à Marseille</h2>
       </div>
 
-    <div class="section4body">
-
-      <figure>
-        <a href="https://www.google.fr/">
-        <img
+      <div class="section4body">
+        <figure>
+          <a href="https://www.google.fr/">
+            <img
               class="element4images portrait"
               src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
               alt="Vieux_port"
               class="contain"
-        />
-          <figcaption><h4 class="titres4">Vieux Port</h4></figcaption>
-        </a> 
+            />
+            <figcaption><h4 class="titres4">Vieux Port</h4></figcaption>
+          </a>
         </figure>
 
         <div class="block4">
-        <figure>
-          <a href="https://www.google.fr/">
-          <img class="element4images paysage"
+          <figure>
+            <a href="https://www.google.fr/">
+              <img
+                class="element4images paysage"
                 src="/images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                 alt="Fort_de_Pomègues"
                 class="contain"
-          />
-            <figcaption><h4 class="titres4">Fort de Pomègues</h4></figcaption>
-          </a> 
+              />
+              <figcaption><h4 class="titres4">Fort de Pomègues</h4></figcaption>
+            </a>
           </figure>
 
           <figure>
             <a href="https://www.google.fr/">
-            <img class="element4images paysage2"
-                  src="/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                  alt="Îles du Frioul"
-                  class="contain"
-            />
-              <figcaption><h4 class="titres4">Îles du Frioul</h4></figcaption>
-            </a> 
-            </figure>
-          </div>
-            <figure>
-              <a href="https://www.google.fr/">
-              <img class="element4images portrait"
-                    src="/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                    alt="Parc National des Calanques"
-                    class="contain"
+              <img
+                class="element4images paysage2"
+                src="/images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                alt="Îles du Frioul"
+                class="contain"
               />
-                <figcaption><h4 class="titres4">Parc National des Calanques</h4></figcaption>
-              </a> 
-              </figure>
+              <figcaption><h4 class="titres4">Îles du Frioul</h4></figcaption>
+            </a>
+          </figure>
+        </div>
+        <figure>
+          <a href="https://www.google.fr/">
+            <img
+              class="element4images portrait"
+              src="/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+              alt="Parc National des Calanques"
+              class="contain"
+            />
+            <figcaption>
+              <h4 class="titres4">Parc National des Calanques</h4>
+            </figcaption>
+          </a>
+        </figure>
 
-              <div class="block4">
-              <figure>
-                <a href="https://www.google.fr/">
-                <img class="element4images paysage3"
-                      src="/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                      alt="Notre-Dame-de-la-Garde"
-                      class="contain"
-                />
-                  <figcaption><h4 class="titres4">Notre-Dame-de-la-Garde</h4></figcaption>
-                </a> 
-                </figure>
+        <div class="block4">
+          <figure>
+            <a href="https://www.google.fr/">
+              <img
+                class="element4images paysage3"
+                src="/images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                alt="Notre-Dame-de-la-Garde"
+                class="contain"
+              />
+              <figcaption>
+                <h4 class="titres4">Notre-Dame-de-la-Garde</h4>
+              </figcaption>
+            </a>
+          </figure>
 
-                <figure>
-                  <a href="https://www.google.fr/">
-                  <img class="element4images paysage4"
-                        src="/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                        alt="Parc_Longchamp"
-                        class="contain"
-                  />
-                    <figcaption><h4 class="titres4">Parc Longchamp</h4></figcaption>
-                  </a> 
-                  </figure>
-                </div>
-    </div>
-              </section>
-
+          <figure>
+            <a href="https://www.google.fr/">
+              <img
+                class="element4images paysage4"
+                src="/images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                alt="Parc_Longchamp"
+                class="contain"
+              />
+              <figcaption><h4 class="titres4">Parc Longchamp</h4></figcaption>
+            </a>
+          </figure>
+        </div>
+      </div>
+    </section>
 
     <!--Fin de page-->
     <footer>
