@@ -273,7 +273,7 @@ a {
 
 /*milieu de page*/
 
-.maincontainer {
+.midcontainer {
   display: flex;
   width: 1340px;
   max-width: 100%;
@@ -284,15 +284,18 @@ a {
 /* section2 hebergements*/
 
 #section2 {
-  justify-content: space-between;
+  display: flex;
+  flex-direction:column;
+  width: 880px;
   background-color: #f2f2f2;
   height:100%;
   border-radius: 16px;
+
 }
 
 /*titre*/
 
-.titre2 {
+.section2head {
   display: flex;
   margin-top: 45px;
   margin-bottom: 30px;
@@ -310,7 +313,10 @@ a {
   max-width: 880px;
 }
 
-.element2images {
+.pic2 {
+  width:236px;
+  height: 114px;
+  object-fit: cover;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
@@ -341,7 +347,7 @@ a {
   font-weight: 400; /*epaisseur de la police du texte de description*/
 }
 
-.information a {
+.section2__footer{
   display: flex;
   align-items: center;
   color: black;
@@ -349,31 +355,67 @@ a {
   font-size: 1.2em;
   margin-left: 40px;
   margin-bottom: 50px;
-
 }
 /* section 3 les plus populaires*/
 
 #section3{
-  background-color: tomato;
+  max-width: 420px;
+  background-color: #f2f2f2;
+  border-radius: 16px;
+}
 
-}.section3head {
-  background-color: paleturquoise;
+.section3head {
   display: flex;
-  margin-top: 45px;
-  margin-bottom: 30px;
-  margin-left: 40px;
+  margin: 45px 37px 30px;
+  justify-content: space-between;
 }
+
+.section3head__item
+{
+  font-size:1.5rem
+}
+
+
 .section3body{
-  background-color:grey;
+  display:flex;
+  flex-wrap: wrap;
 }
+
 .section3__row{
   display: flex;
-  background-color:yellow;
+  width:355px;
+  margin: 0px 37px 30px;
+  padding: 5px 5px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 4px 3px 15px 2px #e9e5e5;
+  background-color: white;
+
 }
-.section3__picture{ /*container de l'image*/ 
- 
+.pic3
+{
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  width:126px;
+  height:133px;
+  object-fit: cover;
 }
+
 .section3__texte{
+  display:flex;
+  flex-direction: column;
+  color: black;
+  margin: 21px 50px 14px 21px;
+
+}
+
+.texte__texte{
+  margin-top:14px;
+  font-weight: 300;
+}
+
+.texte__avis{
+  margin-top:30px;
 }
 /*Fin de page*/
 
