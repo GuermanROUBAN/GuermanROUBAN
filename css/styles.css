@@ -29,7 +29,11 @@ a
     opacity: 0.9;
 }
 
- 
+.main
+  {
+   background-color: slateblue;
+    margin:0px 50px;
+  }
 
 /* Barre de recherche position*/
 

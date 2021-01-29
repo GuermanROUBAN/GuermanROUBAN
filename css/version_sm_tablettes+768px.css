@@ -3,31 +3,26 @@
   margin: 0;
   border: 0;
 }
-*,
-*:before,
-*:after {
+
+*, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-:focus,
-:active {
-  outline: none;
-}
-a:focus,
-a:active {
+
+:focus, :active {
   outline: none;
 }
 
-nav,
-footer,
-header,
-aside {
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
   display: block;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -38,33 +33,35 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-input,
-button,
-textarea {
+input, button, textarea {
   font-family: inherit;
 }
 
 input::-ms-clear {
   display: none;
 }
+
 button {
   cursor: pointer;
 }
+
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
-a,
-a:visited {
+
+a, a:visited {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
 }
-ul,
-li {
+
+ul, li {
   list-style: none;
 }
+
 img {
   vertical-align: top;
 }
@@ -110,6 +107,7 @@ ul {
   /*influe sur le positionnement de la ligne sous le logo*/
   justify-content: space-around;
 }
+
 li {
   font-size: 20px;
 }
@@ -120,7 +118,6 @@ li {
   width: 100%;
   font-size: 20px;
   font-weight: 600;
-
   align-items: center;
   justify-content: center;
   color: black;
@@ -138,7 +135,11 @@ li {
   font-weight: 600;
   color: black;
 }
-.block /* menu de navigation */ {
+
+.block
+/* menu de navigation */
+
+  {
   display: flex;
   width: 100%;
   border-color: grey;
@@ -159,6 +160,7 @@ li {
   border-radius: 16px;
   border-color: #0065fc;
 }
+
 .inscrion a {
   color: black;
 }
@@ -209,7 +211,10 @@ li {
   width: 100px;
 }
 
-#site-search/*formulaire*/ {
+#site-search
+/*formulaire*/
+
+  {
   height: 50px;
   width: 400px;
   border-top: solid;
@@ -231,9 +236,11 @@ li {
   height: 50px;
   margin: -5px;
 }
+
 .boutton_loupe {
   display: none;
 }
+
 .boutton_mot:hover {
   cursor: pointer;
 }
@@ -258,12 +265,16 @@ li {
   margin-left: -2px;
 }
 
-.rubrique:hover /*option survol des rubriques filtres*/ {
+.rubrique:hover
+/*option survol des rubriques filtres*/
+
+  {
   border: solid;
   border-color: #f2f2f2;
   color: red;
   cursor: pointer;
 }
+
 .iconefilter {
   display: flex;
   align-items: center;
@@ -288,6 +299,7 @@ li {
   align-items: center;
   margin-right: 10px;
 }
+
 .theme {
   display: flex;
   flex-direction: row-reverse;
@@ -306,12 +318,15 @@ li {
   justify-content: center;
   align-items: center;
 }
+
 .texteinfo {
   padding: 0 0 0 15px;
   margin-bottom: 20px;
 }
+
 .iconeinfo {
-  font-size: 0.6em; /*reglage de la taille du petit i*/
+  font-size: 0.6em;
+  /*reglage de la taille du petit i*/
   color: #0065fc;
   border: solid;
   border-color: #f2f2f2;
@@ -337,7 +352,6 @@ li {
 #section2 {
   justify-content: space-between;
   background-color: #f2f2f2;
-
   height: 100%;
 }
 
@@ -389,7 +403,8 @@ li {
   margin-bottom: 0;
   padding-left: 15px;
   color: black;
-  font-weight: 400; /*epaisseur de la police du texte de description*/
+  font-weight: 400;
+  /*epaisseur de la police du texte de description*/
 }
 
 .information a {
@@ -401,6 +416,7 @@ li {
   margin-bottom: 40px;
   margin-left: 40px;
 }
+
 /* section 3 les plus populaires*/
 
 #section3 {
@@ -408,7 +424,6 @@ li {
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
-
   border-radius: 16px;
 }
 
@@ -458,10 +473,12 @@ li {
   margin-bottom: 30px;
   box-shadow: 4px 3px 15px 2px #e9e5e5;
 }
+
 .element3images {
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
 }
+
 .element3description {
   display: flex;
   flex-direction: column;
@@ -479,6 +496,7 @@ li {
   color: black;
   font-weight: 400;
 }
+
 .element3description i {
   margin-top: 10px;
 }
@@ -492,18 +510,24 @@ li {
   justify-content: center;
   background-color: #f2f2f2;
 }
-.titre4 h2/*titres des images dans la section4 -> activités*/ {
+
+.titre4 h2
+/*titres des images dans la section4 -> activités*/
+
+  {
   width: 100%;
   margin-top: 40px;
   margin-bottom: 30px;
   padding-left: 20px;
 }
+
 .section4body {
   width: 70%;
   justify-content: center;
   margin: 0 20px;
   margin-bottom: 30px;
 }
+
 .contenaire4 {
   width: 100%;
   justify-content: space-between;
@@ -531,6 +555,7 @@ li {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
+
 .deskt {
   display: none;
 }
@@ -540,6 +565,7 @@ li {
   padding-left: 10px;
   color: black;
 }
+
 /*Fin de page*/
 
 /*Footer*/
@@ -556,9 +582,11 @@ footer {
   margin-top: 40px;
   justify-content: space-around;
 }
+
 .p1 {
   margin-bottom: 0px;
 }
+
 .p2 {
   padding-right: 40px;
   margin-bottom: 0px;
@@ -567,6 +595,7 @@ footer {
 .p3 {
   margin-bottom: 0px;
 }
+
 .titrefooter {
   padding-bottom: 10px;
 }
