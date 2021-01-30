@@ -1,14 +1,79 @@
-body {
+* {
+  padding: 0;
   margin: 0;
+  border: 0;
 }
 
-.wrapper {
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+
+.header__row {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.logo {
+.header__logo {
   display: flex;
   width: 70%;
   align-items: center;
@@ -16,7 +81,7 @@ body {
   order: 1;
 }
 
-.navigation /* hébergements et navigation*/ {
+.header__navigation /* hébergements et navigation*/ {
   display: block;
   width: 100%;
   align-items: center;
@@ -25,9 +90,10 @@ body {
   order: 3;
 }
 
-.inscription /*s'inscrire*/ {
+.header__inscription /*s'inscrire*/ {
   display: flex;
-  width: 20%;
+  width: 25%;
+  font-size: 1.2rem;
   align-items: center;
   justify-content: flex-end;
   order: 2;
@@ -53,10 +119,9 @@ a {
   display: flex;
   width: 100%;
   border-bottom: solid;
-  border-color: grey;
+  border-color:#f2f2f2;
   justify-content: center;
   align-items: center;
-
   margin-top: 20px;
   padding-bottom: 20px;
 }
@@ -68,26 +133,19 @@ a {
 
 /*--------section1 - debut de page-------------*/
 
-.wrapper1 {
+/* champs dans le quel se trouve la bare de recherche (formulaire)*/ 
+.section1__search1 {
+  display: flex;
   height: 100%;
+  width: 100%;
   margin-top: 35px;
   padding-left: 20px;
 }
-
-.trouvez h1 {
-  margin-top: 0;
+.section1head{
+  margin-left: 20px;
+  font-size: 1.1rem;
 }
-
-.trouvez p {
-  margin: 17px 0;
-}
-
-.search /* champs dans le quel se trouve la bare de recherche (formulaire)*/ {
-  display: flex;
-  width: 100%;
-}
-
-.iconeposition /*icone avant le formulaire*/ {
+.search1__picture /*icone avant le formulaire*/ {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,12 +154,12 @@ a {
   border: solid #f2f2f2;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
-  height: 47px;
-  width: 47px;
+  height: 50px;
+  width: 50px;
 }
 
 #site-search /*formulaire*/ {
-  height: 52px;
+  height: 50px;
   width: 250px;
   border-top: solid;
   border-bottom: solid;
@@ -123,16 +181,18 @@ a {
   border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px;
   width: 50px;
-  height: 52px;
+  height: 50px;
   margin: -20px;
+  color:white;
 }
 
 /* incone de l'onglet filtre*/
-.filtres {
+.section1__filtres {
   display: flex;
   flex-wrap: wrap;
   margin-top: 15px; /*influe sur la position de la ligne*/
   margin-bottom: 36px;
+  margin-left: 20px;
 }
 
 .versionxs {
@@ -174,14 +234,14 @@ a {
   margin-left: -2px;
 }
 
-.titre {
+.filters__titre {
   display: flex;
   width: 100%;
   margin-right: 25px;
 }
 
-.titre h4 {
-  margin: 18px 0;
+.filters__titre h4 {
+  margin: 18px 0px;
 }
 
 .theme {
@@ -198,51 +258,43 @@ a {
   font-size: 1em;
 }
 
-.info {
+.section1__info {
   display: flex;
   flex-wrap: wrap;
+  margin: 0px 24px 20px 20px;
   align-items: center;
-  align-content: center;
+  justify-content: center;
 }
-.texteinfo {
+.info__texteinfo {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
   align-items: center;
-  padding-left: 10px;
+  padding: 20px 0px 0px 10px;
   margin-bottom: 25px;
-
   width: 90%;
 }
-.iconeinfo {
+.info__picture {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1em; /*reglage de la taille du petit i*/
+  font-size: 0.8rem; /*reglage de la taille du petit i*/
   color: #0065fc;
   border: solid;
   border-color: #f2f2f2;
-  width: 1.2em;
-  height: 1.2em;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 20px;
   margin-bottom: 20px;
   position: relative;
-  top: -13px;
+
 }
 
 /*milieu de page*/
 
-.wrapper23 {
+.midcontainer {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-
-.maincontainer {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: auto;
   justify-content: space-between;
 }
 
@@ -258,7 +310,7 @@ a {
 
 /*titre*/
 
-.titre2 {
+.section2head {
   display: flex;
   justify-content: flex-start;
   width: 100%;
@@ -273,22 +325,23 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-around;
   border-radius: 16px;
+  margin:0px 20px;
 }
 
-.element2images {
-  width: auto;
+.pic2 {
+  width: 100%;
   height: 114px;
+  object-fit: cover;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
 
-.element2 {
+.section2__row {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 334px;
+  width: 100%;
   background-color: white;
   border-radius: 16px;
   padding: 5px;
@@ -296,19 +349,25 @@ a {
   margin-bottom: 10px;
 }
 
-.element2 h4 {
+.texte2__header {
   margin-top: 5px;
   margin-bottom: 0px;
   padding-left: 15px;
   color: black;
 }
 
-.element2 p {
+.texte2__body {
   margin-top: 5px;
   margin-bottom: 0;
   padding-left: 15px;
   color: black;
   font-weight: 400; /*epaisseur de la police du texte de description*/
+}
+
+.texte2__footer{
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 15px;
 }
 
 /* section 3 les plus populaires*/
@@ -388,7 +447,7 @@ a {
   margin-top: 20px;
   margin-bottom: 0px;
 }
-.information a {
+.section2__footer a {
   display: flex;
   align-items: center;
   color: black;
