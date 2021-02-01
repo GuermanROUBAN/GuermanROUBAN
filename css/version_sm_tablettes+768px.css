@@ -66,11 +66,6 @@ img {
   vertical-align: top;
 }
 
-h4 {
-  margin-top: 0px;
-  margin-bottom: 2px;
-}
-
 /* Header */
 
 header {
@@ -78,20 +73,20 @@ header {
   height: 200px;
 }
 
-.wrapper {
+.header__row{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
-.logo {
+.header__logo {
   display: flex;
   width: 100%;
   margin: 20px 0;
   justify-content: center;
 }
 
-.navigation {
+.header__navigation {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -112,7 +107,7 @@ li {
   font-size: 20px;
 }
 
-.inscription {
+.header__inscription {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -120,10 +115,15 @@ li {
   font-weight: 600;
   align-items: center;
   justify-content: center;
-  color: black;
+  text-decoration: none;
   color: red;
   cursor: pointer;
   background-color: #f2f2f2;
+}
+
+.header__inscription a:visited{
+  text-decoration: none;
+  color:#0065fc;
 }
 
 .nav1 a {
@@ -173,22 +173,28 @@ li {
   width: 100%;
 }
 
-.trouvez h1 {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
+.section1head {
+  width:100%;
+  margin-top:20px;
 }
 
-.trouvez p {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
+
+.section1head h1{
+  width:100%;
+  text-align: center;
   margin-bottom: 20px;
 }
 
+.section1head p{
+  width:100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
 /* bloc recherche */
 
-.search {
+.section1__search1 {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -198,7 +204,7 @@ li {
   align-items: center;
 }
 
-.iconeposition {
+.search1__picture {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -245,7 +251,7 @@ li {
   cursor: pointer;
 }
 
-.filtres {
+.section1__filtres {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -293,12 +299,16 @@ li {
   margin-left: -2px;
 }
 
-.titre {
+.filters__titre {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   margin-right: 10px;
 }
+.filters__titre h4 {
+  margin: 18px 0px;
+}
+
 
 .theme {
   display: flex;
@@ -312,34 +322,36 @@ li {
   font-size: 1em;
 }
 
-.info {
+.section1__info {
   display: flex;
   margin-top: 20px;
   justify-content: center;
   align-items: center;
 }
 
-.texteinfo {
+.info__texteinfo {
   padding: 0 0 0 15px;
   margin-bottom: 20px;
 }
 
-.iconeinfo {
-  font-size: 0.6em;
+.info__picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
   /*reglage de la taille du petit i*/
   color: #0065fc;
   border: solid;
   border-color: #f2f2f2;
-  width: 1.1em;
-  height: 1.1em;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 20px;
-  text-align: center;
   margin-bottom: 20px;
 }
 
 /*milieu de page*/
 
-.maincontainer {
+.midcontainer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -350,14 +362,18 @@ li {
 /* section2 hebergements*/
 
 #section2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
   justify-content: space-between;
   background-color: #f2f2f2;
-  height: 100%;
+  
 }
 
 /*titre*/
 
-.titre2 {
+.section2head {
   display: flex;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -375,12 +391,15 @@ li {
   max-width: 880px;
 }
 
-.element2images {
+.pic2 {
+  width: 100%;
+  height: 114px;
+  object-fit: cover;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
 
-.element2 {
+.section2__row {
   display: inline-block;
   background-color: white;
   max-width: 250px;
@@ -391,14 +410,14 @@ li {
   margin-bottom: 20px;
 }
 
-.element2 h4 {
+.texte2__header {
   margin-top: 5px;
   margin-bottom: 0px;
   padding-left: 15px;
   color: black;
 }
 
-.element2 p {
+.texte2__body {
   margin-top: 5px;
   margin-bottom: 0;
   padding-left: 15px;
@@ -407,14 +426,21 @@ li {
   /*epaisseur de la police du texte de description*/
 }
 
-.information a {
+.texte2__footer {
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-left: 15px;
+}
+
+
+.section2__footer a {
   display: flex;
   align-items: center;
   color: black;
   font-weight: 600;
   margin-top: 20px;
   margin-bottom: 40px;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 /* section 3 les plus populaires*/
@@ -429,76 +455,73 @@ li {
 
 .section3head {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  column-gap:  20px;
   width: 100%;
-  height: 10%;
 }
 
-.titre3 {
-  display: flex;
-  height: 10%;
-  width: 90%;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding-left: 40px;
-  justify-content: center;
+.section3head__texte {
+margin: 20px 0;
 }
+.section3head__item {
 
-.icone3 {
-  display: flex;
-  justify-items: baseline;
-  height: 10%;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding-right: 20px;
-  justify-content: center;
 }
 
 /*body pannel des offres*/
 
 .section3body {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
   height: 80%;
+  width: 90%;
+  margin:auto
 }
 
-.element3 {
-  display: inline-flex;
+.section3__row {
+  display: flex;
   background-color: white;
-  width: 300px;
-  height: 134px;
+  width: 100%;
+  height: 114px;
   padding: 5px 5px;
   border-radius: 16px;
   margin-bottom: 30px;
   box-shadow: 4px 3px 15px 2px #e9e5e5;
 }
 
-.element3images {
+.section3_picture{
+  
+  width: 50%;
+  object-fit: cover;
+
+}
+.pic3 {
+  width:60%;
+  height: 100%;
+  object-fit: cover;  
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
 }
 
-.element3description {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
+.section3__texte3 {
+  width:100%;
 }
 
-.element3description h4 {
+
+.texte3__header {
   margin-top: 10px;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   color: black;
 }
 
-.element3description p {
+.texte3__body {
   color: black;
   font-weight: 400;
 }
 
-.element3description i {
-  margin-top: 10px;
+.texte3__footer i {
+  margin-top: 30px;
 }
 
 /* section4 activités*/
