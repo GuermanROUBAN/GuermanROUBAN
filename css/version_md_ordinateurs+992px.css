@@ -19,7 +19,7 @@ a:focus, a:active {
 }
 
 nav, footer, header, aside {
-  display: block
+  display: block;
 }
 
 html, body {
@@ -38,7 +38,7 @@ input, button, textarea {
 }
 
 input::-ms-clear {
-  display: none
+  display: none;
 }
 
 button {
@@ -46,7 +46,8 @@ button {
 }
 
 button::-moz-focus-inner {
-  padding: 0 border:0;
+  padding: 0;
+  border: 0;
 }
 
 a, a:visited {
@@ -57,7 +58,7 @@ a:hover {
   text-decoration: none;
 }
 
-ul, li {
+ul li {
   list-style: none;
 }
 
@@ -65,14 +66,13 @@ img {
   vertical-align: top;
 }
 
-.main
-  {
-  max-width:1340px;
+
+
+.main {
+  max-width: 1340px;
   width: 100%;
   margin: auto;
-
-  }
-
+}
 
 /* Header */
 
@@ -83,40 +83,37 @@ header {
   height: 130px;
   color: #0065fc;
 }
-.header__row{
-  display:flex;
+
+.header__row {
+  display: flex;
   width: 100%;
   justify-content: space-between;
- 
 }
+
 .header__logo {
   display: flex;
   align-items: center;
-  width:80%;
-
- 
+  width: 80%;
 }
+
 .header__navigation {
   display: flex;
   justify-content: center;
-  color:#0065fc;
+  color: #0065fc;
   font-size: 16px;
 }
 
 nav {
   display: flex;
-
 }
 
 nav ul {
   display: flex;
   /*aligne les div dans le menu navigation*/
- 
 }
 
 nav li {
   display: flex;
-
 }
 
 a {
@@ -143,19 +140,16 @@ a {
   border-color: #0065fc;
 }
 
-.header__inscription{
+.header__inscription {
   display: flex;
   margin-left: 30px;
   justify-self: flex-end;
   padding-top: 3px;
- 
- 
   align-items: center;
 }
 
-.header__inscription a
-{
-   color: #0065fc;
+.header__inscription a {
+  color: #0065fc;
 }
 
 /*Début de page*/
@@ -164,7 +158,6 @@ a {
 
 #section1 {
   width: 100%;
-  
 }
 
 .section1head__texte {
@@ -329,7 +322,6 @@ a {
   display: flex;
   width: 100%;
   column-gap: 50px;
-
 }
 
 /* section2 hebergements*/
@@ -357,18 +349,16 @@ a {
 .section2body {
   display: flex;
   flex-wrap: wrap;
-  margin:0px 40px;
+  margin: 0px 40px;
   justify-content: space-between;
-
 }
 
-.section2__row
-{
+.section2__row {
   width: 248px;
   height: 200px;
   border-radius: 16px;
   padding: 5px;
-  margin-bottom:30px;
+  margin-bottom: 30px;
   background-color: white;
   box-shadow: 4px 3px 15px 2px #e9e5e5;
 }
@@ -380,31 +370,34 @@ a {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
+
 .section2__texte2 {
   margin: 15px 0px 10px 12px;
   color: black;
 }
-.texte2__header{
+
+.texte2__header {
   font-weight: 800;
 }
-.texte2__body{
-  margin-top:10px;
+
+.texte2__body {
+  margin-top: 10px;
   font-weight: 300;
 }
-.texte2__footer{
-  margin-top:8px;
-}
-.section2__footer
-{
-  margin: 10px 0px 50px 40px;
-}
-.section2__footer a
-{
-color: black;
-font-weight: 700;
-font-size: 1.2rem;
+
+.texte2__footer {
+  margin-top: 8px;
 }
 
+.section2__footer {
+  margin: 10px 0px 50px 40px;
+}
+
+.section2__footer a {
+  color: black;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
 
 /* section 3 les plus populaires*/
 
@@ -472,43 +465,38 @@ font-size: 1.2rem;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
- 
 }
 
-.section4head
-  {
+.section4head {
   display: flex;
   width: 100%;
   margin-top: 60px;
   margin-bottom: 25px;
-
 }
 
 .section4body {
   display: flex;
   flex-wrap: wrap;
-  width:100%;
+  width: 100%;
   height: 100%;
   margin-bottom: 40px;
   justify-content: space-between;
-
 }
 
-.section4body__row{
-  max-width:300px;  
+.section4body__row {
+  max-width: 300px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   margin-bottom: 20px;
 }
 
-.section4__container
-{
+.section4__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.section4__title4{
+.section4__title4 {
   width: 100%;
   background-color: white;
   color: black;
@@ -519,7 +507,7 @@ font-size: 1.2rem;
   box-shadow: 4px 3px 15px 2px #e9e5e5;
 }
 
-.section4__picture img{
+.section4__picture img {
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
 }
@@ -562,38 +550,39 @@ footer {
   height: 219px;
   background-color: #f2f2f2;
 }
-.footer__row{
+
+.footer__row {
   display: flex;
   max-width: 1340px;
   width: 100%;
   max-height: 100%;
-  margin:auto;
+  margin: auto;
   margin-top: 44px;
- 
-}
-.footer__row a{
-  color:black;
-}
-.row__titre{
-  margin-bottom:25px;
 }
 
-.footer__row p{
+.footer__row a {
+  color: black;
+}
+
+.row__titre {
+  margin-bottom: 25px;
+}
+
+.footer__row p {
   margin-bottom: 10px;
   font-weight: 300;
 }
 
-.p1
-{
+.p1 {
   width: 33%;
 }
-.p2
-{
+
+.p2 {
   width: 33%;
-  margin-left:10px;
+  margin-left: 10px;
 }
-.p2
-{
+
+.p2 {
   width: 33%;
-  margin-left:20px;
+  margin-left: 20px;
 }
