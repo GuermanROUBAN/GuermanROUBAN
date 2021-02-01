@@ -71,6 +71,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  margin-top:30px;
 }
 
 .header__logo {
@@ -93,7 +94,6 @@ img {
 .header__inscription /*s'inscrire*/ {
   display: flex;
   width: 25%;
-  font-size: 1.2rem;
   align-items: center;
   justify-content: flex-end;
   order: 2;
@@ -132,7 +132,23 @@ a {
 }
 
 /*--------section1 - debut de page-------------*/
+#section1 {
+  width: 100%;
+  
+}
+.section1head{
+  margin: 40px;
+}
 
+.section1head h1{
+  font-size: 22px;
+}
+
+
+.section1head__texte {
+  margin-top: 16px;
+  margin-bottom: 23px;
+}
 /* champs dans le quel se trouve la bare de recherche (formulaire)*/ 
 .section1__search1 {
   display: flex;
