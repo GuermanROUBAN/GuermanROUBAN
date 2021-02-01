@@ -66,12 +66,11 @@ img {
   vertical-align: top;
 }
 
-
 .header__row {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin-top:30px;
+  margin-top: 30px;
 }
 
 .header__logo {
@@ -82,7 +81,10 @@ img {
   order: 1;
 }
 
-.header__navigation /* hébergements et navigation*/ {
+.header__navigation
+/* hébergements et navigation*/
+
+  {
   display: block;
   width: 100%;
   align-items: center;
@@ -91,7 +93,10 @@ img {
   order: 3;
 }
 
-.header__inscription /*s'inscrire*/ {
+.header__inscription
+/*s'inscrire*/
+
+  {
   display: flex;
   width: 25%;
   align-items: center;
@@ -100,11 +105,12 @@ img {
 }
 
 nav ul {
-  display: flex; /*aligne les div dans le menu navigation*/
-
+  display: flex;
+  /*aligne les div dans le menu navigation*/
   margin: 0px;
   padding: 0px;
 }
+
 nav li {
   display: block;
 }
@@ -115,41 +121,50 @@ a {
   font-weight: 600;
 }
 
-.block /* menu de navigation */ {
+.block
+/* menu de navigation */
+
+  {
   display: flex;
   width: 100%;
   border-bottom: solid;
-  border-color:#f2f2f2;
+  border-color: #f2f2f2;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
   padding-bottom: 20px;
 }
 
-.block:hover /* trait bleu en dessous du menu navigation*/ {
-  border-bottom: solid; /*trait de soulignement au passage du curseur*/
+.block:hover
+/* trait bleu en dessous du menu navigation*/
+
+  {
+  border-bottom: solid;
+  /*trait de soulignement au passage du curseur*/
   border-color: #0065fc;
 }
 
 /*--------section1 - debut de page-------------*/
+
 #section1 {
   width: 100%;
-  
 }
-.section1head{
+
+.section1head {
   margin: 40px;
 }
 
-.section1head h1{
+.section1head h1 {
   font-size: 22px;
 }
-
 
 .section1head__texte {
   margin-top: 16px;
   margin-bottom: 23px;
 }
-/* champs dans le quel se trouve la bare de recherche (formulaire)*/ 
+
+/* champs dans le quel se trouve la bare de recherche (formulaire)*/
+
 .section1__search1 {
   display: flex;
   height: 100%;
@@ -157,11 +172,16 @@ a {
   margin-top: 35px;
   padding-left: 20px;
 }
-.section1head{
+
+.section1head {
   margin-left: 20px;
   font-size: 1.1rem;
 }
-.search1__picture /*icone avant le formulaire*/ {
+
+.search1__picture
+/*icone avant le formulaire*/
+
+  {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,7 +194,10 @@ a {
   width: 50px;
 }
 
-#site-search /*formulaire*/ {
+#site-search
+/*formulaire*/
+
+  {
   height: 50px;
   width: 250px;
   border-top: solid;
@@ -189,7 +212,10 @@ a {
   display: none;
 }
 
-.boutton_loupe /*boutton de recherche du formulaire*/ {
+.boutton_loupe
+/*boutton de recherche du formulaire*/
+
+  {
   border: solid #0065fc;
   background-color: #0065fc;
   border-top-right-radius: 16px;
@@ -199,14 +225,16 @@ a {
   width: 50px;
   height: 50px;
   margin: -20px;
-  color:white;
+  color: white;
 }
 
 /* incone de l'onglet filtre*/
+
 .section1__filtres {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 15px; /*influe sur la position de la ligne*/
+  margin-top: 15px;
+  /*influe sur la position de la ligne*/
   margin-bottom: 36px;
   margin-left: 20px;
 }
@@ -226,7 +254,10 @@ a {
   margin-left: -2px;
 }
 
-.rubrique:hover /*option survol des rubriques filtres*/ {
+.rubrique:hover
+/*option survol des rubriques filtres*/
+
+  {
   border: solid;
   border-color: #f2f2f2;
   color: red;
@@ -281,6 +312,7 @@ a {
   align-items: center;
   justify-content: center;
 }
+
 .info__texteinfo {
   display: flex;
   flex-wrap: wrap;
@@ -289,11 +321,13 @@ a {
   margin-bottom: 25px;
   width: 90%;
 }
+
 .info__picture {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.8rem; /*reglage de la taille du petit i*/
+  font-size: 0.8rem;
+  /*reglage de la taille du petit i*/
   color: #0065fc;
   border: solid;
   border-color: #f2f2f2;
@@ -302,7 +336,6 @@ a {
   border-radius: 20px;
   margin-bottom: 20px;
   position: relative;
-
 }
 
 /*milieu de page*/
@@ -342,7 +375,7 @@ a {
   flex-wrap: wrap;
   width: 100%;
   border-radius: 16px;
-  margin:0px 20px;
+  margin: 0px 20px;
 }
 
 .pic2 {
@@ -377,10 +410,11 @@ a {
   margin-bottom: 0;
   padding-left: 15px;
   color: black;
-  font-weight: 400; /*epaisseur de la police du texte de description*/
+  font-weight: 400;
+  /*epaisseur de la police du texte de description*/
 }
 
-.texte2__footer{
+.texte2__footer {
   margin-top: 5px;
   margin-bottom: 0;
   padding-left: 15px;
@@ -406,14 +440,13 @@ a {
   display: flex;
   width: 100%;
   margin: 43px 0px 35px 20px;
- 
 }
+
 .section3head__item {
   display: flex;
   font-size: 1.3rem;
   margin-top: 43px;
   margin-right: 20px;
-  
 }
 
 /*body pannel des offres*/
@@ -433,16 +466,15 @@ a {
   padding: 5px 5px;
   border-radius: 16px;
   box-shadow: 4px 3px 15px 2px #e9e5e5;
-  
- 
 }
+
 .section3__picture {
-  width:70%;
-  
+  width: 70%;
 }
-  .section3__picture img{
-  height:134px;
-  width:100%;
+
+.section3__picture img {
+  height: 134px;
+  width: 100%;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
   object-fit: cover;
@@ -450,14 +482,13 @@ a {
 }
 
 .section3__texte3 {
-  display:flex;
+  display: flex;
   flex-direction: column;
-  width:100%;
+  width: 100%;
   margin: 0px 0px 5px 25px;
 }
 
-.texte3__header{
-
+.texte3__header {
   margin-top: 10px;
   padding-bottom: 0px;
   margin-bottom: 0px;
@@ -470,10 +501,12 @@ a {
   color: black;
   font-weight: 400;
 }
+
 .texte3__footer i {
   margin-top: 45px;
   margin-bottom: 0px;
 }
+
 .section2__footer a {
   display: flex;
   align-items: center;
@@ -493,17 +526,22 @@ a {
   width: 100%;
 }
 
-.section4head/*titres des images dans la section4 -> activités*/ {
+.section4head
+/*titres des images dans la section4 -> activités*/
+
+  {
   width: 100%;
   margin-top: 40px;
   margin-bottom: 30px;
   padding-left: 20px;
 }
+
 .section4body {
   width: 100%;
   margin: 0 20px;
   margin-bottom: 30px;
 }
+
 .section4__container {
   display: flex;
   flex-wrap: wrap;
@@ -542,42 +580,41 @@ footer {
 }
 
 .footer__row {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
-
-  margin-left:20px;
+  margin-left: 20px;
   flex-direction: column;
-  
-}
-.row__titre{
-  margin-bottom:25px;
 }
 
-.footer__row a{
-  color:black;
+.row__titre {
+  margin-bottom: 25px;
 }
-.footer__row p{
+
+.footer__row a {
+  color: black;
+}
+
+.footer__row p {
   margin-bottom: 15px;
   font-weight: 300;
 }
 
 .p1 {
-  width:100%;
-  display:flex;
+  width: 100%;
+  display: flex;
   flex-direction: column;
-  
 }
+
 .p2 {
-  width:100%;
-  display:flex;
+  width: 100%;
+  display: flex;
   flex-direction: column;
   padding-top: 50px;
 }
 
 .p3 {
-  width:100%;
-  display:flex;
+  width: 100%;
+  display: flex;
   flex-direction: column;
   padding-top: 50px;
 }
-
