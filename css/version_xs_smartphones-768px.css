@@ -466,7 +466,7 @@ a {
   width: 100%;
 }
 
-.titre4 h2/*titres des images dans la section4 -> activités*/ {
+.section4head/*titres des images dans la section4 -> activités*/ {
   width: 100%;
   margin-top: 40px;
   margin-bottom: 30px;
@@ -477,19 +477,14 @@ a {
   margin: 0 20px;
   margin-bottom: 30px;
 }
-.contenaire4 {
+.section4__container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
 }
 
-.frioul {
-  display: flex;
-  width: 100%;
-}
-
-.element4 {
+.section4body__row {
   display: flex;
   flex-wrap: wrap;
   background-color: white;
@@ -499,26 +494,19 @@ a {
   margin-bottom: 22px;
 }
 
-.element4images {
+.section4__picture img {
   width: 100%;
   height: 131px;
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
+  object-fit: cover;
 }
 
-.smart {
-  width: 100%;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-}
-.deskt {
-  display: none;
-}
-
-.section4body h4 {
-  padding-left: 10px;
+.section4__title4 {
+  padding: 20px 10px;
   color: black;
 }
+
 footer {
   height: 487px;
   background-color: #f2f2f2;
