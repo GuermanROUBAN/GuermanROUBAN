@@ -72,6 +72,11 @@ img{vertical-align: top;}
 	order: 2;
  }
  
+ .header__inscription a
+{
+	color: #0065fc;
+}
+
  nav ul {
 	display: flex;
 	/*aligne les div dans le menu navigation*/
@@ -85,7 +90,6 @@ img{vertical-align: top;}
  
  a {
 	display: inline-block;
-	color: #0065fc;
 	font-weight: 600;
  }
  
@@ -103,6 +107,13 @@ img{vertical-align: top;}
 	padding-bottom: 20px;
  }
  
+ .block a
+ /* menu de navigation */
+ 
+	{
+	color:black;
+ }
+
  .block:hover
  /* trait bleu en dessous du menu navigation*/
  
@@ -205,7 +216,7 @@ img{vertical-align: top;}
 	flex-wrap: wrap;
 	margin-top: 15px;
 	/*influe sur la position de la ligne*/
-	margin-bottom: 36px;
+	margin-bottom: 20px;
 	margin-left: 20px;
  }
  
@@ -333,8 +344,8 @@ img{vertical-align: top;}
 	display: flex;
 	justify-content: flex-start;
 	width: 100%;
-	margin-top: 20px;
-	margin-bottom: 10px;
+	margin-top: 40px;
+	margin-bottom: 30px;
 	padding-left: 20px;
  }
  
