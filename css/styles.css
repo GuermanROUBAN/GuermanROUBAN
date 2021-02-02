@@ -1,77 +1,78 @@
 /* Body */
-*
-{
+
+* {
     font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
-p
-{
+p {
     font-size: 14px;
     padding-bottom: 0px;
 }
 
-header
-{
+header {
     color: #0065FC;
 }
-nav li 
-{
-    list-style-type: none; /*sans les puces*/
+
+nav li {
+    list-style-type: none;
+    /*sans les puces*/
 }
-nav a:hover /*survol au dessus*/
-{
-    color:#0065FC;
+
+nav a:hover
+/*survol au dessus*/
+
+    {
+    color: #0065FC;
 }
-a
-{
+
+a {
     text-decoration: none;
-    cursor: pointer; /*curseur se transforme en petit doight quand on passe sur le champs*/
+    cursor: pointer;
+    /*curseur se transforme en petit doight quand on passe sur le champs*/
     opacity: 0.9;
 }
 
-
 /* Barre de recherche position*/
 
-    .iconeposition
-{
+.iconeposition {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: #F2F2F2;
-    border:solid #F2F2F2;
+    border: solid #f2f2f2f6;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
     height: 46px;
     width: 50px;
 }
 
-#site-search/*formulaire*/
-{
+#site-search
+/*formulaire*/
+
+    {
     height: 50px;
-    border-top:solid;
-    border-bottom:solid;
-    border-right:none;
+    border-top: solid;
+    border-bottom: solid;
+    border-right: none;
     border-left: none;
     border-color: #F2F2F2;
     font-weight: bold;
 }
 
-.boutton
-{
+.boutton {
     border: solid #0065fcf6;
-    background-color:#0065FC;
+    background-color: #0065FC;
     color: red;
     font-weight: 600;
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
     width: 8em;
     height: 50px;
-    margin:-5px;
+    margin: -5px;
 }
 
-.iconeinfo
-{
+.iconeinfo {
     font-size: 1em;
     color: #0065FC;
     border: solid;
@@ -82,22 +83,28 @@ a
     text-align: center;
 }
 
+.prix
+/*mise en valeur du prix des chambres*/
 
-.prix /*mise en valeur du prix des chambres*/
-{
-    font-weight:600;
+    {
+    font-weight: 600;
 }
 
-.avis /*etoiles pleines*/
-{
-    color:#0065FC;
+.avis
+/*etoiles pleines*/
+
+    {
+    color: #0065FC;
     font-size: 0.8em;
 }
-.uncheck /*etoiles vides*/
-{
-    color:#F2F2F2;
+
+.uncheck
+/*etoiles vides*/
+
+    {
+    color: #F2F2F2;
 }
-.loupe
-{
-    color:white;
+
+.loupe {
+    color: white;
 }
