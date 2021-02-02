@@ -1,3 +1,53 @@
+SESSION DU 02/02/2021
+Alexandre Grisey
+1. Avancées de l’étudiant sur son projet depuis la dernière session
+
+=> Fin des adaptations responsive
+
+=> Validation HTML et CSS W3C (à vérifier ?)
+
+2. Principaux sujets abordés pendant la session, obstacles à surmonter (le cas échéant), et actions nécessaires pour atteindre ces objectifs
+
+=> Vérification du travail effectué
+
+=> Soutenance
+
+=> Projet 3
+
+3. Objectifs 'SMART' fixés par l'étudiant et le mentor pour la prochaine session
+
+=> Faire les dernières corrections :
+
+- couleur du menu sur la version mobile
+
+- marges à vérifier (sur la version mobile notamment)
+
+- padding à ajouter sur la version desktop sur l'ensemble des éléments (30 px environ)
+
+- supprimer les images inutiles
+
+- faire une dernière passe vis à vis de la maquette pour tout valider
+
+=> Tu peux tenter de travailler encore sur l'adaptation des flex (via des max-width) en créant une nouvelle branche
+
+=> Me demander validation si jamais (pas obligatoire)
+
+=> Tout mettre sur la branche main et héberger sous GitHub Pages
+
+=> Re-vérifier si la validation W3C est OK
+
+=> Planifier la soutenance & upload les livrables (liens) 48h avant
+
+=> Si tu as le temps, pour le P3 :
+
+- Te familiariser avec le projet (ce qui est demandé)
+
+- Travailler sur les cours
+
+Progression sur Transformez une maquette en site web
+En attente de validation
+
+
 GuermanROUBAN
 SESSION DU 12/01/2021
 Alexandre Grisey
