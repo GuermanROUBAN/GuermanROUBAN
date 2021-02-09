@@ -1,13 +1,4 @@
 @-moz-document url-prefix() {
-  html, body {
-    overflow-x: auto !important;
-  }
-  html {
-    overflow: -moz-scrollbars-none !important;
-  }
-  body {
-    scrollbar-width: none;
-  }
   .section2body {
     display: block!important;
   }
@@ -17,9 +8,6 @@
     max-height: none!important;
     width: 80%;
     margin: auto;
-  }
-  .section4body__row {
-    display: block !important;
   }
 }
 

@@ -1,13 +1,4 @@
 @-moz-document url-prefix() {
-	html, body {
-	  overflow-x: auto !important;
-	}
-	html {
-	  overflow: -moz-scrollbars-none !important;
-	}
-	body {
-	  scrollbar-width: none;
-	}
 	.pic2{min-width: 280px;
 	}
 	.section4body__row{

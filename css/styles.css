@@ -1,4 +1,17 @@
-
+@-moz-document url-prefix() {
+  html, body {
+    overflow-x: auto !important;
+  }
+  html {
+    overflow: -moz-scrollbars-none !important;
+  }
+  body {
+	scrollbar-width: none;
+	}
+  .section4body__row{
+    display: block !important;
+  }
+}
 
 * {
     padding: 0;
