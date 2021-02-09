@@ -70,10 +70,6 @@ nav li {
 
 /*section1*/
 
-#section1 {
-  width: 100%;
-}
-
 .section1head__texte {
   margin-top: 16px;
   margin-bottom: 23px;
@@ -82,7 +78,6 @@ nav li {
 /* bloc recherche */
 
 .section1__search1 {
-  display: flex;
   flex-direction: row;
   text-align: center;
   align-items: center;
@@ -105,14 +100,7 @@ nav li {
 /*formulaire*/
 
   {
-  height: 50px;
   width: 237px;
-  border-top: solid;
-  border-bottom: solid;
-  border-right: none;
-  border-left: none;
-  border-color: #f2f2f2;
-  font-weight: bold;
 }
 
 .boutton_mot {
@@ -135,8 +123,9 @@ nav li {
   cursor: pointer;
 }
 
+/* incone de l'onglet filtre*/
+
 .section1__filtres {
-  display: flex;
   align-items: center;
   margin-top: 30px;
   /*influe sur la position de la ligne*/
@@ -144,91 +133,32 @@ nav li {
 }
 
 .rubrique {
-  display: flex;
   flex-wrap: wrap;
   justify-items: center;
-  border: 3px #f2f2f2 solid;
-  border-radius: 45px;
-  height: 48px;
   margin-bottom: -2px;
-  margin-top: -2px;
-  margin-left: -2px;
 }
 
-.rubrique:hover
-/*option survol des rubriques filtres*/
-
-  {
-  border: solid;
-  border-color: #f2f2f2;
-  color: red;
-  cursor: pointer;
-}
-
-.iconefilter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.1rem;
-  color: #0065fc;
-  background-color: #deebff;
-  width: 2.5em;
-  height: 2.5em;
-  border-radius: 34px;
-  padding: 1px;
-  margin-right: 13px;
-  margin-bottom: -2px;
-  margin-top: -2px;
-  margin-left: -2px;
-}
 
 .filters__titre {
-  display: flex;
+
   flex-direction: row-reverse;
   align-items: center;
   margin-right: 25px;
 }
 
 .theme {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
   margin-left: 0px;
   margin-right: 40px;
 }
 
-.sujet {
-  margin-right: 20px;
-  font-weight: bold;
-  font-size: 1em;
-}
 
-.section1__info {
-  display: flex;
-  align-items: center;
-}
 
 .info__texteinfo {
   padding: 0 0 0 15px;
-  margin-bottom: 20px;
+ 
 }
 
-.info__picture {
-  display: flex;
-  font-size: 0.9em;
-  /*reglage de la taille du petit i*/
-  color: #0065fc;
-  border: solid;
-  border-color: #f2f2f2;
-  width: 2em;
-  height: 2em;
-  border-radius: 20px;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin-bottom: 20px;
-}
+
 
 /*milieu de page*/
 

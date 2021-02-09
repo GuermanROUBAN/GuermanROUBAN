@@ -131,6 +131,16 @@ a {
 
 /*section1*/
 
+#section1 {
+  width: 100%;
+}
+
+/* bloc recherche */
+
+.section1__search1 {
+  display: flex;
+}
+
 /* Barre de recherche position*/
 
 .iconeposition {
@@ -171,6 +181,12 @@ a {
   margin: -5px;
 }
 
+/* incone de l'onglet filtre*/
+
+.section1__filtres {
+  display: flex;
+}
+
 .iconeinfo {
   font-size: 1em;
   color: #0065FC;
@@ -182,12 +198,89 @@ a {
   text-align: center;
 }
 
+.rubrique {
+  display: flex;
+  border: 3px #f2f2f2 solid;
+  border-radius: 45px;
+  height: 48px;
+  margin-top: -2px;
+  margin-left: -2px;
+}
+
+.rubrique:hover {
+  /*option survol des rubriques filtres*/
+  border: solid;
+  border-color: #f2f2f2;
+  color: red;
+  cursor: pointer;
+}
+
+.iconefilter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #0065fc;
+  background-color: #deebff;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 34px;
+  padding: 1px;
+  margin-bottom: -2px;
+  margin-top: -2px;
+  margin-left: -2px;
+  font-size: 1.2rem;
+  margin-right: 11px;
+}
+
+.filters__titre {
+  display: flex;
+  align-items: center;
+}
+
+.theme{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.sujet{
+  font-weight: bold;
+  font-size: 1em;
+  margin-right: 20px;
+}
+
+.section1__info {
+  display: flex;
+  align-items: center;
+}
+
+.info__texteinfo {
+  margin-bottom: 25px;
+}
+
+.info__picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  /*reglage de la taille du petit i*/
+  color: #0065fc;
+  border: solid;
+  border-color: #f2f2f2;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
 .prix
 /*mise en valeur du prix des chambres*/
 
   {
   font-weight: 600;
 }
+
+
 
 .avis
 /*etoiles pleines*/

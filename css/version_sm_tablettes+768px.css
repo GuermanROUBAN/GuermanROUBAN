@@ -50,7 +50,6 @@ li {
 /*s'inscrire*/
 
   {
- 
   flex-direction: row;
   width: 100%;
   font-size: 20px;
@@ -75,7 +74,6 @@ li {
 /* menu de navigation */
 
   {
- 
   width: 100%;
   border-color: grey;
   justify-content: center;
@@ -85,7 +83,6 @@ li {
 .block:hover {
   border: solid;
   border-radius: 16px;
-
   color: black;
 }
 
@@ -103,10 +100,6 @@ li {
 /*Début de page*/
 
 /*section1*/
-
-#section1 {
-  width: 100%;
-}
 
 .section1head {
   width: 100%;
@@ -128,7 +121,6 @@ li {
 /* bloc recherche */
 
 .section1__search1 {
-  display: flex;
   flex-direction: row;
   width: 100%;
   margin-bottom: 20px;
@@ -154,14 +146,7 @@ li {
 /*formulaire*/
 
   {
-  height: 50px;
   width: 400px;
-  border-top: solid;
-  border-bottom: solid;
-  border-right: none;
-  border-left: none;
-  border-color: #f2f2f2;
-  font-weight: bold;
 }
 
 .boutton_mot {
@@ -184,8 +169,9 @@ li {
   cursor: pointer;
 }
 
+/* incone de l'onglet filtre*/
+
 .section1__filtres {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
@@ -193,47 +179,14 @@ li {
 }
 
 .rubrique {
-  display: flex;
   flex-wrap: wrap;
   justify-items: center;
-  border: 3px #f2f2f2 solid;
-  border-radius: 45px;
-  height: 48px;
   margin-bottom: 10px;
-  margin-top: -2px;
-  margin-left: -2px;
 }
 
-.rubrique:hover
-/*option survol des rubriques filtres*/
-
-  {
-  border: solid;
-  border-color: #f2f2f2;
-  color: red;
-  cursor: pointer;
-}
-
-.iconefilter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 1.2em;
-  color: #0065fc;
-  background-color: #deebff;
-  width: 2.5em;
-  height: 2.5em;
-  border-radius: 34px;
-  padding: 1px;
-  margin-right: 10px;
-  margin-bottom: -2px;
-  margin-top: -2px;
-  margin-left: -2px;
-}
 
 .filters__titre {
-  display: flex;
+
   flex-direction: row-reverse;
   align-items: center;
   margin-right: 10px;
@@ -243,44 +196,19 @@ li {
   margin: 18px 0px;
 }
 
-.theme {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-
-.sujet {
-  margin-right: 20px;
-  font-weight: bold;
-  font-size: 1em;
-}
 
 .section1__info {
-  display: flex;
+
   margin-top: 20px;
   justify-content: center;
-  align-items: center;
+  
 }
 
 .info__texteinfo {
   padding: 0 0 0 15px;
-  margin-bottom: 20px;
+
 }
 
-.info__picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.8rem;
-  /*reglage de la taille du petit i*/
-  color: #0065fc;
-  border: solid;
-  border-color: #f2f2f2;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 20px;
-  margin-bottom: 20px;
-}
 
 /*milieu de page*/
 
