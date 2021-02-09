@@ -141,6 +141,19 @@ a {
   display: flex;
 }
 
+.search1__picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f2f2f2;
+  border: solid #f2f2f2f6;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  height: 50px;
+}
+
+
 /* Barre de recherche position*/
 
 .iconeposition {

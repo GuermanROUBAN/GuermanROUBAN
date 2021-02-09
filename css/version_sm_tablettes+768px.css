@@ -129,16 +129,9 @@ li {
   align-items: center;
 }
 
-.search1__picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #f2f2f2;
-  border: solid #f2f2f2f6;
-  border-top-left-radius: 16px;
-  border-bottom-left-radius: 16px;
-  height: 50px;
+.search1__picture /*icone avant le formulaire*/
+{
+
   width: 100px;
 }
 

@@ -8,14 +8,11 @@
 }
 
 .header__row {
-	display: flex;
 	flex-wrap: wrap;
-	width: 100%;
 	margin-top: 30px;
 }
 
 .header__logo {
-	display: flex;
 	width: 70%;
 	align-items: center;
 	padding-left: 20px;
@@ -38,15 +35,9 @@
 /*s'inscrire*/
 
 	{
-	display: flex;
 	width: 25%;
-	align-items: center;
 	justify-content: flex-end;
 	order: 2;
-}
-
-.header__inscription a {
-	color: #0065fc;
 }
 
 nav ul {
@@ -69,7 +60,6 @@ a {
 /* menu de navigation */
 
 	{
-	display: flex;
 	width: 100%;
 	border-bottom: solid;
 	border-color: #f2f2f2;
@@ -79,10 +69,7 @@ a {
 	padding-bottom: 20px;
 }
 
-.block a
-/* menu de navigation */
-
-	{
+.block a {
 	color: black;
 }
 
@@ -91,8 +78,6 @@ a {
 
 	{
 	border-bottom: solid;
-	/*trait de soulignement au passage du curseur*/
-	border-color: #0065fc;
 }
 
 /*--------section1 - debut de page-------------*/
@@ -117,7 +102,6 @@ a {
 /* champs dans le quel se trouve la bare de recherche (formulaire)*/
 
 .section1__search1 {
-	display: flex;
 	height: 100%;
 	width: 100%;
 	margin-top: 35px;
@@ -133,15 +117,6 @@ a {
 /*icone avant le formulaire*/
 
 	{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	background-color: #f2f2f2;
-	border: solid #f2f2f2f6;
-	border-top-left-radius: 16px;
-	border-bottom-left-radius: 16px;
-	height: 50px;
 	width: 50px;
 }
 
@@ -150,14 +125,7 @@ a {
 
 	{
 	justify-content: center;
-	height: 50px;
 	width: 90%;
-	border-top: solid;
-	border-bottom: solid;
-	border-right: none;
-	border-left: none;
-	border-color: #f2f2f2;
-	font-weight: bold;
 }
 
 .boutton_mot {
@@ -183,7 +151,6 @@ a {
 /* incone de l'onglet filtre*/
 
 .section1__filtres {
-	display: flex;
 	flex-wrap: wrap;
 	margin-top: 15px;
 	/*influe sur la position de la ligne*/
@@ -197,22 +164,7 @@ a {
 }
 
 .rubrique {
-	display: flex;
-	border: 3px #f2f2f2 solid;
-	border-radius: 45px;
-	height: 48px;
 	margin-bottom: -2px;
-	margin-top: -2px;
-	margin-left: -2px;
-}
-
-.rubrique:hover
-/*option survol des rubriques filtres*/
-
-	{
-	border: solid;
-	border-color: #f2f2f2;
-	color: red;
 }
 
 .filters__titre {
@@ -225,10 +177,7 @@ a {
 }
 
 .theme {
-	display: flex;
 	margin-bottom: 14px;
-	flex-direction: row-reverse;
-	align-items: center;
 	margin-left: 0px;
 }
 
@@ -460,8 +409,6 @@ footer {
 	margin-left: 20px;
 	flex-direction: column;
 }
-
-
 
 .p1 {
 	width: 100%;
