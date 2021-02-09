@@ -4,8 +4,8 @@
 }
 
 header{
+  max-width: 768px;
   height: 100%;
-  background-color: lawngreen;
 }
 
 .header__row {
@@ -22,25 +22,46 @@ header{
 .header__navigation  {
 /* hébergements et navigation*/
 width: 100%;
-margin-top: 40px;
 order: 3;
 }
-/*
-nav
+
+nav{
+  width:100%;
+}
+
 nav ul
+{
+  width:100%;
+
+}
+
 nav li
-a
-*/
+{
+  width:50%;
+}
 
 /* menu de navigation */
 .block{
+
+  justify-content: center;
   border-bottom: solid;
   border-color: #f2f2f2;
   padding-bottom: 20px;
 }
 
+.nav1, .nav2 { 
+  justify-content: center;
+  width:50%;
+}
+
 .block a{
  color:black;
+}
+
+.block:hover {
+  border-top:none;
+  border-bottom: solid;
+  border-color: #0065fc;
 }
 
 .header__inscription {
@@ -52,12 +73,10 @@ a
   order: 2;
 }
 
-
-
-
-/*--------section1 - debut de page-------------*/
-
-
+  /*Début de page*/
+  
+  /*section1*/
+  
 
 .section1head {
   margin: 40px;
@@ -67,7 +86,7 @@ a
   font-size: 22px;
 }
 
-/* champs dans le quel se trouve la bare de recherche (formulaire)*/
+/  /* bloc recherche */
 
 .section1__search1 {
 
@@ -88,6 +107,7 @@ a
 
 .boutton_loupe  {
 /*boutton de recherche du formulaire*/
+  display:inline-block;
   border: solid #0065fcf6;
   background-color: #0065fc;
   border-top-right-radius: 16px;
@@ -124,6 +144,7 @@ a
 
 .filters__titre {
   width: 100%;
+  flex-direction: inherit;
 }
 
 .filters__titre h4 {
@@ -167,6 +188,7 @@ a
 /*milieu de page*/
 
 .midcontainer {
+
   flex-direction: column;
   justify-content: space-between;
 }
@@ -174,9 +196,12 @@ a
 /* section2 hebergements*/
 
 #section2 {
-  flex-wrap: wrap;
+  max-width: 420px;
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: rgb(83, 128, 0);
   order: 2;
-  justify-content: space-between;
+
 }
 
 /*titre*/
@@ -192,23 +217,19 @@ a
 /*body section 2 pannel des offres*/
 
 .section2body {
-  flex-wrap: wrap;
-  width: 100%;
-  border-radius: 16px;
-  margin: 0px 20px;
+ display: block;
+ margin: 0px 20px;
 }
 
 .section2__row {
-  display: flex;
-  flex-wrap: wrap;
+  display:flex;
   flex-direction: column;
-  width: 100%;
-  margin-bottom: 10px;
-}
-.pic2 {
-  width: 100%;
+  width:100%;
 }
 
+.pic2{
+ width:100%;
+}
 .texte2__header {
   margin-top: 5px;
   margin-bottom: 0px;
@@ -270,19 +291,21 @@ a
 /*body pannel des offres*/
 
 .section3body {
-
-  flex-direction: column;
+  display:block;
+  justify-content: ;
   width: 100%;
-  margin-bottom: 30px;
-  justify-content: center;
+
 }
 
 .section3__row {
-  margin: 0px 20px 10px 20px;
+  display:flex;
+  margin:auto;
+  width:90%;
+
 }
 
 .section3__picture {
-  width: 70%;
+  width: 60%;
 }
 
 .section3__picture img {
@@ -291,7 +314,7 @@ a
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
   object-fit: cover;
-  background-color: blueviolet;
+
 }
 
 .section3__texte3 {
@@ -301,6 +324,7 @@ a
 }
 
 .texte3__header {
+
   margin-top: 10px;
   padding-bottom: 0px;
   margin-bottom: 0px;
@@ -308,6 +332,7 @@ a
 }
 
 .texte3__body {
+  
   margin-top: 10px;
   margin-bottom: 0px;
   color: black;
@@ -315,7 +340,7 @@ a
 }
 
 .texte3__footer i {
-  margin-top: 45px;
+  margin-top: 30px;
   margin-bottom: 0px;
 }
 
@@ -324,9 +349,7 @@ a
 
 .section4head
 /*titres des images dans la section4 -> activités*/
-
-  {
-
+{
   margin-top: 40px;
   margin-bottom: 30px;
   padding-left: 20px;
@@ -336,8 +359,6 @@ a
   margin: 0 20px;
   margin-bottom: 30px;
 }
-
-
 
 .section4body__row {
   display: flex;
@@ -364,12 +385,14 @@ a
   object-fit: cover;
 }
 
+  /*Footer*/
+
 footer {
   height: 486px;
-  padding-top: 45px;
 }
 
 .footer__row {
+  max-width: 768px;
   flex-wrap: wrap;
   margin-left: 20px;
   flex-direction: column;
@@ -385,22 +408,9 @@ footer {
 
 }
 
-.p1 {
+.p1, .p2, .p3 {
   width: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.p2 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding-top: 50px;
-}
-
-.p3 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding-top: 50px;
+ 
 }
