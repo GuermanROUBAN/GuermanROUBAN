@@ -83,7 +83,7 @@ li {
 .block:hover {
   border: solid;
   border-radius: 16px;
-  color: black;
+  color:  #0065fc;
 }
 
 .inscription:hover {
