@@ -1,12 +1,11 @@
 @-moz-document url-prefix() {
-	.pic2{min-width: 280px;
+	.pic2 {
+		min-width: 275px;
 	}
-	.section4body__row{
-	min-width: 280px;
-	display: block !important;
+	.section4body__row {
+		min-width: 280px;
 	}
- }
-
+}
 
 .header__row {
 	display: flex;

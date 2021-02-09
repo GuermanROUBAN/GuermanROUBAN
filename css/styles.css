@@ -6,169 +6,204 @@
     overflow: -moz-scrollbars-none !important;
   }
   body {
-	scrollbar-width: none;
-	}
-  .section4body__row{
+    scrollbar-width: none;
+  }
+  .section4body__row {
     display: block !important;
   }
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: border-box;
-  }
-  
-  :focus, :active {
-    outline: none;
-  }
-  
-  a:focus, a:active {
-    outline: none;
-  }
-  
-  nav, footer, header, aside {
-    display: block;
-  }
-  
-  html, body {
-    height: 100%;
-    width: 100%;
-    font-size: 100%;
-    line-height: 1;
-    font-size: 16px;
-  }
-  
-  input, button, textarea {
-    font-family: inherit;
-  }
-  
-  button {
-    cursor: pointer;
-  }
-  
-  a, a:visited {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: none;
-  }
-  
-  ul li {
-    list-style: none;
-  }
-  
-  img {
-    vertical-align: top;
-  }
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 16px;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
 
 p {
-    font-size: 14px;
-    padding-bottom: 0px;
+  font-size: 14px;
+  padding-bottom: 0px;
 }
 
 header {
-    color: #0065FC;
+  display: flex;
+  color: #0065FC;
 }
 
 nav li {
-    list-style-type: none;
-    /*sans les puces*/
+  list-style-type: none;
+  /*sans les puces*/
 }
 
 nav a:hover
 /*survol au dessus*/
 
-    {
-    color: #0065FC;
+  {
+  color: #0065FC;
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
-    /*curseur se transforme en petit doight quand on passe sur le champs*/
-    opacity: 0.9;
+  text-decoration: none;
+  cursor: pointer;
+  /*curseur se transforme en petit doight quand on passe sur le champs*/
+  opacity: 0.9;
+  font-weight: 600;
 }
+
+.header__row {
+  display: flex;
+  width: 100%;
+}
+
+.header__logo {
+  display: flex;
+}
+
+.header__inscription
+/*s'inscrire*/
+
+  {
+  display: flex;
+  align-items: center;
+}
+
+.header__inscription a {
+  color: #0065fc;
+}
+
+.block {
+  display: flex;
+}
+
+.block:hover {
+  border-color: #0065fc;
+}
+
+/*Début de page*/
+
+/*section1*/
 
 /* Barre de recherche position*/
 
 .iconeposition {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #F2F2F2;
-    border: solid #f2f2f2f6;
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
-    height: 46px;
-    width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #F2F2F2;
+  border: solid #f2f2f2f6;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  height: 46px;
+  width: 50px;
 }
 
 #site-search
 /*formulaire*/
 
-    {
-    height: 50px;
-    border-top: solid;
-    border-bottom: solid;
-    border-right: none;
-    border-left: none;
-    border-color: #F2F2F2;
-    font-weight: bold;
+  {
+  height: 50px;
+  border-top: solid;
+  border-bottom: solid;
+  border-right: none;
+  border-left: none;
+  border-color: #F2F2F2;
+  font-weight: bold;
 }
 
 .boutton {
-    border: solid #0065fcf6;
-    background-color: #0065FC;
-    color: red;
-    font-weight: 600;
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
-    width: 8em;
-    height: 50px;
-    margin: -5px;
+  border: solid #0065fcf6;
+  background-color: #0065FC;
+  color: red;
+  font-weight: 600;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  width: 8em;
+  height: 50px;
+  margin: -5px;
 }
 
 .iconeinfo {
-    font-size: 1em;
-    color: #0065FC;
-    border: solid;
-    border-color: #F2F2F2;
-    width: 1.1em;
-    height: 1.1em;
-    border-radius: 20px;
-    text-align: center;
+  font-size: 1em;
+  color: #0065FC;
+  border: solid;
+  border-color: #F2F2F2;
+  width: 1.1em;
+  height: 1.1em;
+  border-radius: 20px;
+  text-align: center;
 }
 
 .prix
 /*mise en valeur du prix des chambres*/
 
-    {
-    font-weight: 600;
+  {
+  font-weight: 600;
 }
 
 .avis
 /*etoiles pleines*/
 
-    {
-    color: #0065FC;
-    font-size: 0.8em;
+  {
+  color: #0065FC;
+  font-size: 0.8em;
 }
 
 .uncheck
 /*etoiles vides*/
 
-    {
-    color: #F2F2F2;
+  {
+  color: #F2F2F2;
 }
 
 .loupe {
-    color: white;
+  color: white;
 }

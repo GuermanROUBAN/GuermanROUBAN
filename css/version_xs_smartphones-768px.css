@@ -1,19 +1,18 @@
 @-moz-document url-prefix() {
-  .pic2{min-width: 335px;
+  .pic2 {
+    min-width: 335px;
   }
-  .section4body__row{
-  min-width: 335px;
+  .section4body__row {
+    min-width: 335px;
   }
 }
+
 .header__row {
-  display: flex;
   flex-wrap: wrap;
-  width: 100%;
   margin-top: 30px;
 }
 
 .header__logo {
-  display: flex;
   width: 70%;
   align-items: center;
   padding-left: 20px;
@@ -36,17 +35,11 @@
 /*s'inscrire*/
 
   {
-  display: flex;
   width: 25%;
-  align-items: center;
   justify-content: flex-end;
   order: 2;
 }
 
-.header__inscription a
-{
-	color: #0065fc;
-}
 nav ul {
   display: flex;
   /*aligne les div dans le menu navigation*/
@@ -60,14 +53,12 @@ nav li {
 
 a {
   display: inline-block;
-  font-weight: 600;
 }
 
 .block
 /* menu de navigation */
 
   {
-  display: flex;
   width: 100%;
   border-bottom: solid;
   border-color: #f2f2f2;
@@ -77,21 +68,20 @@ a {
   padding-bottom: 20px;
 }
 
-.block a{
- color:black;
+.block a {
+  color: black;
 }
-
 
 .block:hover
 /* trait bleu en dessous du menu navigation*/
 
   {
   border-bottom: solid;
-  /*trait de soulignement au passage du curseur*/
-  border-color: #0065fc;
 }
 
-/*--------section1 - debut de page-------------*/
+/*Début de page*/
+
+/*section1*/
 
 #section1 {
   width: 100%;
@@ -163,7 +153,7 @@ a {
 /*boutton de recherche du formulaire*/
 
   {
-    border: solid #0065fcf6;
+  border: solid #0065fcf6;
   background-color: #0065fc;
   border-top-right-radius: 16px;
   border-top-left-radius: 16px;
@@ -518,7 +508,6 @@ a {
   padding: 20px 10px;
   color: black;
 }
-
 
 footer {
   width: 100%;

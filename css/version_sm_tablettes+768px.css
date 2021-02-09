@@ -12,18 +12,14 @@
 }
 
 header {
-  display: flex;
   height: 200px;
 }
 
 .header__row {
-  display: flex;
   flex-wrap: wrap;
-  width: 100%;
 }
 
 .header__logo {
-  display: flex;
   width: 100%;
   margin: 20px 0;
   justify-content: center;
@@ -50,13 +46,15 @@ li {
   font-size: 20px;
 }
 
-.header__inscription {
-  display: flex;
+.header__inscription
+/*s'inscrire*/
+
+  {
+ 
   flex-direction: row;
   width: 100%;
   font-size: 20px;
   font-weight: 600;
-  align-items: center;
   justify-content: center;
   text-decoration: none;
   color: red;
@@ -66,24 +64,18 @@ li {
 
 .header__inscription a:visited {
   text-decoration: none;
-  color: #0065fc;
 }
 
-.nav1 a {
-  font-weight: 600;
+.nav1 a, .nav2 a {
   color: black;
-}
-
-.nav2 a {
   font-weight: 600;
-  color: black;
 }
 
 .block
 /* menu de navigation */
 
   {
-  display: flex;
+ 
   width: 100%;
   border-color: grey;
   justify-content: center;
@@ -93,7 +85,7 @@ li {
 .block:hover {
   border: solid;
   border-radius: 16px;
-  border-color: #0065fc;
+
   color: black;
 }
 
